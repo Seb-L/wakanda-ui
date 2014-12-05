@@ -137,19 +137,23 @@ input[type='range']::-moz-range-thumb {
 	z-index: -1;
 	opacity: 0;
 
-	&+label i{
-		border: 1px solid $default-color;
-		transition: all 300ms ease;
-		color: transparent;
-		text-align: center;
-		background-color: transparent;
-		border: 1px solid $default-color;
-		width: 1rem;
-		height: 1rem;
-		margin-right: 0.25rem;
-		font-size: 0.9rem;
-		vertical-align: text-bottom;
-		display: inline-block;
+	&+label{
+		margin-right: 1rem;
+		
+		i{
+			border: 1px solid $default-color;
+			transition: all 300ms ease;
+			color: transparent;
+			text-align: center;
+			background-color: transparent;
+			border: 1px solid $default-color;
+			width: 1rem;
+			height: 1rem;
+			margin-right: 0.25rem;
+			font-size: 0.9rem;
+			vertical-align: text-bottom;
+			display: inline-block;
+		}
 	}
 	&:checked+label{
 		transition: all 300ms ease;
@@ -171,11 +175,11 @@ input[type='range']::-moz-range-thumb {
 	// Each Color
 	// ------------------------------------------------------------------
 	@each $color-name, $color in $colors {
-	
-		&+label i{
+		
+		&.#{$color-name}+label i{
 			border-color: $color;
 		}
-		&:checked+label{
+		&:checked.#{$color-name}+label{
 			transition: all 300ms ease;
 
 			i{
@@ -184,7 +188,7 @@ input[type='range']::-moz-range-thumb {
 				background-color: $color;
 			}
 		}
-		&:focus+label i{
+		&:focus.#{$color-name}+label i{
 			border-width: 2px;
 		}
 	}

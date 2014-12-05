@@ -2012,20 +2012,22 @@ input[type='range']::-moz-range-thumb {
   position: absolute;
   z-index: -1;
   opacity: 0; }
-  .sw-checkbox + label i {
-    border: 1px solid #646D73;
-    -webkit-transition: all 300ms ease;
-            transition: all 300ms ease;
-    color: transparent;
-    text-align: center;
-    background-color: transparent;
-    border: 1px solid #646D73;
-    width: 1rem;
-    height: 1rem;
-    margin-right: 0.25rem;
-    font-size: 0.9rem;
-    vertical-align: text-bottom;
-    display: inline-block; }
+  .sw-checkbox + label {
+    margin-right: 1rem; }
+    .sw-checkbox + label i {
+      border: 1px solid #646D73;
+      -webkit-transition: all 300ms ease;
+              transition: all 300ms ease;
+      color: transparent;
+      text-align: center;
+      background-color: transparent;
+      border: 1px solid #646D73;
+      width: 1rem;
+      height: 1rem;
+      margin-right: 0.25rem;
+      font-size: 0.9rem;
+      vertical-align: text-bottom;
+      display: inline-block; }
   .sw-checkbox:checked + label {
     -webkit-transition: all 300ms ease;
             transition: all 300ms ease; }
@@ -2038,293 +2040,293 @@ input[type='range']::-moz-range-thumb {
     -webkit-transition: all 300ms ease;
             transition: all 300ms ease;
     border-width: 2px; }
-  .sw-checkbox + label i {
+  .sw-checkbox.cloudy-light + label i {
     border-color: #EFEFEF; }
-  .sw-checkbox:checked + label {
+  .sw-checkbox:checked.cloudy-light + label {
     -webkit-transition: all 300ms ease;
             transition: all 300ms ease; }
-    .sw-checkbox:checked + label i {
+    .sw-checkbox:checked.cloudy-light + label i {
       -webkit-transition: all 300ms ease;
               transition: all 300ms ease;
       color: white;
       background-color: #EFEFEF; }
-  .sw-checkbox:focus + label i {
+  .sw-checkbox:focus.cloudy-light + label i {
     border-width: 2px; }
-  .sw-checkbox + label i {
+  .sw-checkbox.cloudy-medium + label i {
     border-color: #E7E7E7; }
-  .sw-checkbox:checked + label {
+  .sw-checkbox:checked.cloudy-medium + label {
     -webkit-transition: all 300ms ease;
             transition: all 300ms ease; }
-    .sw-checkbox:checked + label i {
+    .sw-checkbox:checked.cloudy-medium + label i {
       -webkit-transition: all 300ms ease;
               transition: all 300ms ease;
       color: white;
       background-color: #E7E7E7; }
-  .sw-checkbox:focus + label i {
+  .sw-checkbox:focus.cloudy-medium + label i {
     border-width: 2px; }
-  .sw-checkbox + label i {
+  .sw-checkbox.cloudy-dark + label i {
     border-color: #C9C9C9; }
-  .sw-checkbox:checked + label {
+  .sw-checkbox:checked.cloudy-dark + label {
     -webkit-transition: all 300ms ease;
             transition: all 300ms ease; }
-    .sw-checkbox:checked + label i {
+    .sw-checkbox:checked.cloudy-dark + label i {
       -webkit-transition: all 300ms ease;
               transition: all 300ms ease;
       color: white;
       background-color: #C9C9C9; }
-  .sw-checkbox:focus + label i {
+  .sw-checkbox:focus.cloudy-dark + label i {
     border-width: 2px; }
-  .sw-checkbox + label i {
+  .sw-checkbox.shadow-light + label i {
     border-color: #434848; }
-  .sw-checkbox:checked + label {
+  .sw-checkbox:checked.shadow-light + label {
     -webkit-transition: all 300ms ease;
             transition: all 300ms ease; }
-    .sw-checkbox:checked + label i {
+    .sw-checkbox:checked.shadow-light + label i {
       -webkit-transition: all 300ms ease;
               transition: all 300ms ease;
       color: white;
       background-color: #434848; }
-  .sw-checkbox:focus + label i {
+  .sw-checkbox:focus.shadow-light + label i {
     border-width: 2px; }
-  .sw-checkbox + label i {
+  .sw-checkbox.shadow-medium + label i {
     border-color: #292B2B; }
-  .sw-checkbox:checked + label {
+  .sw-checkbox:checked.shadow-medium + label {
     -webkit-transition: all 300ms ease;
             transition: all 300ms ease; }
-    .sw-checkbox:checked + label i {
+    .sw-checkbox:checked.shadow-medium + label i {
       -webkit-transition: all 300ms ease;
               transition: all 300ms ease;
       color: white;
       background-color: #292B2B; }
-  .sw-checkbox:focus + label i {
+  .sw-checkbox:focus.shadow-medium + label i {
     border-width: 2px; }
-  .sw-checkbox + label i {
+  .sw-checkbox.shadow-dark + label i {
     border-color: #171D1F; }
-  .sw-checkbox:checked + label {
+  .sw-checkbox:checked.shadow-dark + label {
     -webkit-transition: all 300ms ease;
             transition: all 300ms ease; }
-    .sw-checkbox:checked + label i {
+    .sw-checkbox:checked.shadow-dark + label i {
       -webkit-transition: all 300ms ease;
               transition: all 300ms ease;
       color: white;
       background-color: #171D1F; }
-  .sw-checkbox:focus + label i {
+  .sw-checkbox:focus.shadow-dark + label i {
     border-width: 2px; }
-  .sw-checkbox + label i {
+  .sw-checkbox.cloudy-font + label i {
     border-color: #646D73; }
-  .sw-checkbox:checked + label {
+  .sw-checkbox:checked.cloudy-font + label {
     -webkit-transition: all 300ms ease;
             transition: all 300ms ease; }
-    .sw-checkbox:checked + label i {
+    .sw-checkbox:checked.cloudy-font + label i {
       -webkit-transition: all 300ms ease;
               transition: all 300ms ease;
       color: white;
       background-color: #646D73; }
-  .sw-checkbox:focus + label i {
+  .sw-checkbox:focus.cloudy-font + label i {
     border-width: 2px; }
-  .sw-checkbox + label i {
+  .sw-checkbox.shadow-font + label i {
     border-color: #9C9E9E; }
-  .sw-checkbox:checked + label {
+  .sw-checkbox:checked.shadow-font + label {
     -webkit-transition: all 300ms ease;
             transition: all 300ms ease; }
-    .sw-checkbox:checked + label i {
+    .sw-checkbox:checked.shadow-font + label i {
       -webkit-transition: all 300ms ease;
               transition: all 300ms ease;
       color: white;
       background-color: #9C9E9E; }
-  .sw-checkbox:focus + label i {
+  .sw-checkbox:focus.shadow-font + label i {
     border-width: 2px; }
-  .sw-checkbox + label i {
+  .sw-checkbox.turquoise + label i {
     border-color: #1abc9c; }
-  .sw-checkbox:checked + label {
+  .sw-checkbox:checked.turquoise + label {
     -webkit-transition: all 300ms ease;
             transition: all 300ms ease; }
-    .sw-checkbox:checked + label i {
+    .sw-checkbox:checked.turquoise + label i {
       -webkit-transition: all 300ms ease;
               transition: all 300ms ease;
       color: white;
       background-color: #1abc9c; }
-  .sw-checkbox:focus + label i {
+  .sw-checkbox:focus.turquoise + label i {
     border-width: 2px; }
-  .sw-checkbox + label i {
+  .sw-checkbox.emerald + label i {
     border-color: #2ecc71; }
-  .sw-checkbox:checked + label {
+  .sw-checkbox:checked.emerald + label {
     -webkit-transition: all 300ms ease;
             transition: all 300ms ease; }
-    .sw-checkbox:checked + label i {
+    .sw-checkbox:checked.emerald + label i {
       -webkit-transition: all 300ms ease;
               transition: all 300ms ease;
       color: white;
       background-color: #2ecc71; }
-  .sw-checkbox:focus + label i {
+  .sw-checkbox:focus.emerald + label i {
     border-width: 2px; }
-  .sw-checkbox + label i {
+  .sw-checkbox.peter-river + label i {
     border-color: #3498db; }
-  .sw-checkbox:checked + label {
+  .sw-checkbox:checked.peter-river + label {
     -webkit-transition: all 300ms ease;
             transition: all 300ms ease; }
-    .sw-checkbox:checked + label i {
+    .sw-checkbox:checked.peter-river + label i {
       -webkit-transition: all 300ms ease;
               transition: all 300ms ease;
       color: white;
       background-color: #3498db; }
-  .sw-checkbox:focus + label i {
+  .sw-checkbox:focus.peter-river + label i {
     border-width: 2px; }
-  .sw-checkbox + label i {
+  .sw-checkbox.amethyst + label i {
     border-color: #9b59b6; }
-  .sw-checkbox:checked + label {
+  .sw-checkbox:checked.amethyst + label {
     -webkit-transition: all 300ms ease;
             transition: all 300ms ease; }
-    .sw-checkbox:checked + label i {
+    .sw-checkbox:checked.amethyst + label i {
       -webkit-transition: all 300ms ease;
               transition: all 300ms ease;
       color: white;
       background-color: #9b59b6; }
-  .sw-checkbox:focus + label i {
+  .sw-checkbox:focus.amethyst + label i {
     border-width: 2px; }
-  .sw-checkbox + label i {
+  .sw-checkbox.wet-asphalt + label i {
     border-color: #34495e; }
-  .sw-checkbox:checked + label {
+  .sw-checkbox:checked.wet-asphalt + label {
     -webkit-transition: all 300ms ease;
             transition: all 300ms ease; }
-    .sw-checkbox:checked + label i {
+    .sw-checkbox:checked.wet-asphalt + label i {
       -webkit-transition: all 300ms ease;
               transition: all 300ms ease;
       color: white;
       background-color: #34495e; }
-  .sw-checkbox:focus + label i {
+  .sw-checkbox:focus.wet-asphalt + label i {
     border-width: 2px; }
-  .sw-checkbox + label i {
+  .sw-checkbox.green-sea + label i {
     border-color: #16a085; }
-  .sw-checkbox:checked + label {
+  .sw-checkbox:checked.green-sea + label {
     -webkit-transition: all 300ms ease;
             transition: all 300ms ease; }
-    .sw-checkbox:checked + label i {
+    .sw-checkbox:checked.green-sea + label i {
       -webkit-transition: all 300ms ease;
               transition: all 300ms ease;
       color: white;
       background-color: #16a085; }
-  .sw-checkbox:focus + label i {
+  .sw-checkbox:focus.green-sea + label i {
     border-width: 2px; }
-  .sw-checkbox + label i {
+  .sw-checkbox.nephritis + label i {
     border-color: #27ae60; }
-  .sw-checkbox:checked + label {
+  .sw-checkbox:checked.nephritis + label {
     -webkit-transition: all 300ms ease;
             transition: all 300ms ease; }
-    .sw-checkbox:checked + label i {
+    .sw-checkbox:checked.nephritis + label i {
       -webkit-transition: all 300ms ease;
               transition: all 300ms ease;
       color: white;
       background-color: #27ae60; }
-  .sw-checkbox:focus + label i {
+  .sw-checkbox:focus.nephritis + label i {
     border-width: 2px; }
-  .sw-checkbox + label i {
+  .sw-checkbox.belize-hole + label i {
     border-color: #2980b9; }
-  .sw-checkbox:checked + label {
+  .sw-checkbox:checked.belize-hole + label {
     -webkit-transition: all 300ms ease;
             transition: all 300ms ease; }
-    .sw-checkbox:checked + label i {
+    .sw-checkbox:checked.belize-hole + label i {
       -webkit-transition: all 300ms ease;
               transition: all 300ms ease;
       color: white;
       background-color: #2980b9; }
-  .sw-checkbox:focus + label i {
+  .sw-checkbox:focus.belize-hole + label i {
     border-width: 2px; }
-  .sw-checkbox + label i {
+  .sw-checkbox.wisteria + label i {
     border-color: #8e44ad; }
-  .sw-checkbox:checked + label {
+  .sw-checkbox:checked.wisteria + label {
     -webkit-transition: all 300ms ease;
             transition: all 300ms ease; }
-    .sw-checkbox:checked + label i {
+    .sw-checkbox:checked.wisteria + label i {
       -webkit-transition: all 300ms ease;
               transition: all 300ms ease;
       color: white;
       background-color: #8e44ad; }
-  .sw-checkbox:focus + label i {
+  .sw-checkbox:focus.wisteria + label i {
     border-width: 2px; }
-  .sw-checkbox + label i {
+  .sw-checkbox.midnight-blue + label i {
     border-color: #2c3e50; }
-  .sw-checkbox:checked + label {
+  .sw-checkbox:checked.midnight-blue + label {
     -webkit-transition: all 300ms ease;
             transition: all 300ms ease; }
-    .sw-checkbox:checked + label i {
+    .sw-checkbox:checked.midnight-blue + label i {
       -webkit-transition: all 300ms ease;
               transition: all 300ms ease;
       color: white;
       background-color: #2c3e50; }
-  .sw-checkbox:focus + label i {
+  .sw-checkbox:focus.midnight-blue + label i {
     border-width: 2px; }
-  .sw-checkbox + label i {
+  .sw-checkbox.sun-flower + label i {
     border-color: #ffcd43; }
-  .sw-checkbox:checked + label {
+  .sw-checkbox:checked.sun-flower + label {
     -webkit-transition: all 300ms ease;
             transition: all 300ms ease; }
-    .sw-checkbox:checked + label i {
+    .sw-checkbox:checked.sun-flower + label i {
       -webkit-transition: all 300ms ease;
               transition: all 300ms ease;
       color: white;
       background-color: #ffcd43; }
-  .sw-checkbox:focus + label i {
+  .sw-checkbox:focus.sun-flower + label i {
     border-width: 2px; }
-  .sw-checkbox + label i {
+  .sw-checkbox.carrot + label i {
     border-color: #e67e22; }
-  .sw-checkbox:checked + label {
+  .sw-checkbox:checked.carrot + label {
     -webkit-transition: all 300ms ease;
             transition: all 300ms ease; }
-    .sw-checkbox:checked + label i {
+    .sw-checkbox:checked.carrot + label i {
       -webkit-transition: all 300ms ease;
               transition: all 300ms ease;
       color: white;
       background-color: #e67e22; }
-  .sw-checkbox:focus + label i {
+  .sw-checkbox:focus.carrot + label i {
     border-width: 2px; }
-  .sw-checkbox + label i {
+  .sw-checkbox.alizarin + label i {
     border-color: #e74c3c; }
-  .sw-checkbox:checked + label {
+  .sw-checkbox:checked.alizarin + label {
     -webkit-transition: all 300ms ease;
             transition: all 300ms ease; }
-    .sw-checkbox:checked + label i {
+    .sw-checkbox:checked.alizarin + label i {
       -webkit-transition: all 300ms ease;
               transition: all 300ms ease;
       color: white;
       background-color: #e74c3c; }
-  .sw-checkbox:focus + label i {
+  .sw-checkbox:focus.alizarin + label i {
     border-width: 2px; }
-  .sw-checkbox + label i {
+  .sw-checkbox.orange + label i {
     border-color: #f39c12; }
-  .sw-checkbox:checked + label {
+  .sw-checkbox:checked.orange + label {
     -webkit-transition: all 300ms ease;
             transition: all 300ms ease; }
-    .sw-checkbox:checked + label i {
+    .sw-checkbox:checked.orange + label i {
       -webkit-transition: all 300ms ease;
               transition: all 300ms ease;
       color: white;
       background-color: #f39c12; }
-  .sw-checkbox:focus + label i {
+  .sw-checkbox:focus.orange + label i {
     border-width: 2px; }
-  .sw-checkbox + label i {
+  .sw-checkbox.pumpkin + label i {
     border-color: #d35400; }
-  .sw-checkbox:checked + label {
+  .sw-checkbox:checked.pumpkin + label {
     -webkit-transition: all 300ms ease;
             transition: all 300ms ease; }
-    .sw-checkbox:checked + label i {
+    .sw-checkbox:checked.pumpkin + label i {
       -webkit-transition: all 300ms ease;
               transition: all 300ms ease;
       color: white;
       background-color: #d35400; }
-  .sw-checkbox:focus + label i {
+  .sw-checkbox:focus.pumpkin + label i {
     border-width: 2px; }
-  .sw-checkbox + label i {
+  .sw-checkbox.pomegranate + label i {
     border-color: #c0392b; }
-  .sw-checkbox:checked + label {
+  .sw-checkbox:checked.pomegranate + label {
     -webkit-transition: all 300ms ease;
             transition: all 300ms ease; }
-    .sw-checkbox:checked + label i {
+    .sw-checkbox:checked.pomegranate + label i {
       -webkit-transition: all 300ms ease;
               transition: all 300ms ease;
       color: white;
       background-color: #c0392b; }
-  .sw-checkbox:focus + label i {
+  .sw-checkbox:focus.pomegranate + label i {
     border-width: 2px; }
 
 .sw-radio-cloudy-light + label, .sw-radio-cloudy-medium + label, .sw-radio-cloudy-dark + label, .sw-radio-shadow-light + label, .sw-radio-shadow-medium + label, .sw-radio-shadow-dark + label, .sw-radio-cloudy-font + label, .sw-radio-shadow-font + label, .sw-radio-turquoise + label, .sw-radio-emerald + label, .sw-radio-peter-river + label, .sw-radio-amethyst + label, .sw-radio-wet-asphalt + label, .sw-radio-green-sea + label, .sw-radio-nephritis + label, .sw-radio-belize-hole + label, .sw-radio-wisteria + label, .sw-radio-midnight-blue + label, .sw-radio-sun-flower + label, .sw-radio-carrot + label, .sw-radio-alizarin + label, .sw-radio-orange + label, .sw-radio-pumpkin + label, .sw-radio-pomegranate + label {
