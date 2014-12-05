@@ -1,16 +1,16 @@
 // Base
 html{
- 	font-size: 85%;
+ // 	font-size: 85%;
 	
-	@include breakpoint($breakpoint-sm) {
- 		font-size: 75%;
- 	}
-	@include breakpoint($breakpoint-md) {
- 		font-size: 85%;
- 	}
- 	@include breakpoint($breakpoint-lg) {
- 		font-size: 95%;
- 	}
+	// @include breakpoint($breakpoint-sm) {
+ // 		font-size: 75%;
+ // 	}
+	// @include breakpoint($breakpoint-md) {
+ // 		font-size: 85%;
+ // 	}
+ // 	@include breakpoint($breakpoint-lg) {
+ // 		font-size: 95%;
+ // 	}
 }
 html,
 body{
@@ -21,11 +21,9 @@ body{
 
 body{
 	// background-color: $gray-medium;
-	color: map-get($colors, 'cloudy-font');
-	font-family: 'Lato', sans-serif;
-	line-height: 1.8rem;
-	-webkit-font-smoothing: antialiased;
- 	-moz-osx-font-smoothing: grayscale;
+	// color: map-get($colors, 'cloudy-font');
+	// font-family: 'Lato', sans-serif;
+	// line-height: 1.8rem;
 }
 
 a{
@@ -54,3 +52,8 @@ h3{
 #page{
 	height: 100%;
 }
+
+
+// *[class^="sw-"] {
+// 	background-color: red !important;
+// }

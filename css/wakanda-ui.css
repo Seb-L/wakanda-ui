@@ -413,28 +413,9 @@ table {
   -webkit-animation-delay: 1.5s;
           animation-delay: 1.5s; }
 
-html {
-  font-size: 85%; }
-  @media (min-width: 750px) and (max-width: 970px) {
-    html {
-      font-size: 75%; } }
-  @media (min-width: 970px) and (max-width: 1200px) {
-    html {
-      font-size: 85%; } }
-  @media (min-width: 1200px) {
-    html {
-      font-size: 95%; } }
-
 html,
 body {
   height: 100%;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
-
-body {
-  color: #646D73;
-  font-family: 'Lato', sans-serif;
-  line-height: 1.8rem;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
@@ -473,6 +454,13 @@ h3 {
           flex-direction: column;
   height: 100%;
   overflow: hidden; }
+
+.sw-main-header,
+.sw-sub-nav,
+.sw-left-sidebar {
+  color: #646D73;
+  font-family: 'Lato', sans-serif;
+  line-height: 1.8rem; }
 
 .sw-main-header {
   width: 100%;
