@@ -1,0 +1,59 @@
+// Colors
+
+$colors :(	
+	'cloudy-light': #EFEFEF,
+	'cloudy-medium': #E7E7E7,
+	'cloudy-dark': #C9C9C9,
+
+	'shadow-light': lighten(#373B3B, 5%),
+	'shadow-medium': #292B2B,
+	'shadow-dark': #171D1F,
+
+	'cloudy-font': #646D73,
+	'shadow-font': #9C9E9E,
+
+	'turquoise': #1abc9c,
+	'emerald': #2ecc71,
+	'peter-river': #3498db,
+	'amethyst': #9b59b6,
+	'wet-asphalt': #34495e,
+	'green-sea': #16a085,
+	'nephritis': #27ae60,
+	'belize-hole': #2980b9,
+	'wisteria': #8e44ad,
+	'midnight-blue': #2c3e50,
+	'sun-flower': #ffcd43,
+	'carrot': #e67e22,
+	'alizarin': #e74c3c,
+	'orange': #f39c12,
+	'pumpkin': #d35400,
+	'pomegranate': #c0392b
+);
+
+// Each color
+@each $color-name, $color in $colors {
+
+	.sw-dot-#{$color-name}{
+
+		&:before{
+			content: '';
+			display: inline-block;
+			width: 0.5rem;
+			height: 0.5rem;
+			background-color: $color;
+			line-height: 1rem;
+			border-radius: 50%;
+		}
+	}
+}
+
+// Each color -> text color & bg color
+@each $color-name, $color in $colors {
+
+	.sw-colors-#{$color-name}{
+		color: $color;
+	}
+	.sw-colors-bg-#{$color-name}{
+		background-color: $color;
+	}
+}

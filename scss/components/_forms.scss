@@ -1,0 +1,333 @@
+// ----------------------------------------------------------------------
+// FORM ELEMENTS
+// ----------------------------------------------------------------------
+
+$default-color: map-get($colors, 'cloudy-font');
+
+// Inputs
+input{
+	-webkit-font-smoothing: antialiased;
+ 	-moz-osx-font-smoothing: grayscale;
+}
+
+
+input[type=button],
+input[type=reset],
+input[type=submit]{
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	border: 1px solid map-get($colors, 'cloudy-dark');
+	background-color: map-get($colors, 'cloudy-medium');
+}
+
+// Input text/email/... --------------------------------------------------------------------------------------------------
+input[type=date],
+input[type=datetime],
+input[type=datetime-local],
+input[type=email],
+input[type=month],
+input[type=number],
+input[type=password],
+input[type=search],
+input[type=tel],
+input[type=text],
+input[type=time],
+input[type=url],
+input[type=week]{
+	transition: all 300ms ease;
+	background-color: white;
+	font-size: 1rem;
+	font-weight: 400;
+	// padding: 0.2rem 0.5rem;
+	border: 1px solid map-get($colors, 'cloudy-dark');
+	outline: none;
+	margin-bottom: 1rem;
+	height: 2rem;
+	line-height: 2rem;
+
+	&:focus{
+		transition: all 300ms ease;
+		border: 1px solid black;
+	}
+}
+
+// FILE
+
+input[type=file]{
+	color: transparent;
+}
+
+// RANGE
+
+input[type=range]{
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	background-color: map-get($colors, 'cloudy-medium');
+	height: 0.7rem;
+	outline: none;
+	border-radius: 2rem;
+	overflow: hidden;
+}
+input[type='range']::-webkit-slider-thumb {
+	-webkit-appearance: none !important;
+	height: 0.7rem;
+	width: 2rem;
+	background-color: map-get($colors, 'cloudy-dark');
+}
+input[type='range']::-moz-range-thumb {
+	-moz-appearance: none;
+	height: 0.7rem;
+	width: 2rem;
+	background-color: map-get($colors, 'cloudy-dark');
+}
+
+
+
+// CUSTOM INPUT
+
+%sw-input-text-medium{
+	transition: all 300ms ease;
+	background-color: map-get($colors, 'shadow-dark') !important;
+	outline: none;
+	border: 1px solid map-get($colors, 'cloudy-dark') !important;
+	font-size: 1rem;
+	font-weight: 300;
+	color: white;
+	padding: 0.5rem 0.7rem;
+	width: 20rem;
+	margin-bottom: 1rem;
+	margin-right: 1rem;
+
+	&::placeholder{
+		color: map-get($colors, 'cloudy-dark');
+	}
+	&:focus{
+		transition: all 300ms ease;
+		border: 1px solid map-get($colors, 'sun-flower') !important;
+	}
+}
+
+// Each color
+@each $color-name, $color in $colors {
+	
+	.sw-input-text-medium-#{$color-name}{
+		@extend %sw-input-text-medium;
+		border-color: $color !important;
+	}
+}
+
+// ----------------------------------------------------------------------
+// Checkboxes
+// ----------------------------------------------------------------------
+.sw-checkbox{
+	transition: all 300ms ease;
+	cursor: pointer;
+	margin-right: 0.5rem;
+	display: inline-block;
+
+	-moz-user-select: -moz-none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+
+	&+label i{
+		border: 1px solid $default-color;
+		transition: all 300ms ease;
+		color: transparent;
+		text-align: center;
+		background-color: transparent;
+		border: 1px solid $default-color;
+		width: 1rem;
+		height: 1rem;
+		margin-right: 0.25rem;
+		font-size: 0.9rem;
+		vertical-align: text-bottom;
+		display: inline-block;
+	}
+	&:checked+label{
+		transition: all 300ms ease;
+
+		i{
+			transition: all 300ms ease;
+			color: white;
+			background-color: $default-color;
+		}
+	}
+	&:focus+label{
+
+		i{
+			transition: all 300ms ease;
+			border-width: 2px;
+		}
+	}
+
+	// Each Color
+	// ------------------------------------------------------------------
+	@each $color-name, $color in $colors {
+	
+		&+label i{
+			border-color: $color;
+		}
+		&:checked+label{
+			transition: all 300ms ease;
+
+			i{
+				transition: all 300ms ease;
+				color: white;
+				background-color: $color;
+			}
+		}
+		&:focus+label i{
+			border-width: 2px;
+		}
+	}
+}
+
+// Each color
+// @each $color-name, $color in $colors {
+	
+// 	.sw-checkbox-#{$color-name}{
+// 		position: absolute;
+// 		z-index: -1;
+// 		opacity: 0;
+// 	}
+// 	.sw-checkbox-#{$color-name}+label{
+// 		@extend %sw-checkbox;
+// 		i{
+// 			border: 1px solid $color;
+// 		}
+// 	}
+// 	.sw-checkbox-#{$color-name}:checked+label{
+// 		transition: all 300ms ease;
+
+// 		i{
+// 			transition: all 300ms ease;
+// 			color: white;
+// 			background-color: $color;
+// 		}
+// 	}
+// 	.sw-checkbox-#{$color-name}:focus+label{
+
+// 		i{
+// 			transition: all 300ms ease;
+// 			// box-shadow: 0 0 10px lighten($color, 20%);
+// 			border-width: 2px;
+// 		}
+// 	}
+// }
+
+// // Black tick
+// @each $color-name, $color in $colors {
+	
+// 	.sw-checkbox-#{$color-name}-b{
+// 		position: absolute;
+// 		z-index: -1;
+// 		opacity: 0;
+// 	}
+// 	.sw-checkbox-#{$color-name}-b+label{
+// 		@extend %sw-checkbox;
+// 		i{
+// 			border: 1px solid $color;
+// 		}
+// 	}
+// 	.sw-checkbox-#{$color-name}-b:checked+label{
+// 		transition: all 300ms ease;
+
+// 		i{
+// 			transition: all 300ms ease;
+// 			color: black;
+// 			background-color: $color;
+// 		}
+// 	}
+// 	.sw-checkbox-#{$color-name}-b:focus+label{
+
+// 		i{
+// 			transition: all 300ms ease;
+// 			// box-shadow: 0 0 10px lighten($color, 20%);
+// 			border-width: 2px;
+// 		}
+// 	}
+// }
+
+
+
+// Radio ----------------------------------------------------------------------------------------------------
+%sw-radio{
+	transition: all 300ms ease;
+	cursor: pointer;
+	margin-right: 0.5rem;
+	display: inline-block;
+
+	-moz-user-select: -moz-none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+
+	i{
+		font-size: 1rem;
+		line-height: 1rem;
+
+		&:before{
+			content: "";
+			display: inline-block;
+			transition: all 300ms ease;
+			color: gray;
+			text-align: center;
+			// background-color: lighten(black, 90%);
+			border: 1px black;
+			width: 1rem;
+			height: 1rem;
+			margin-right: 0.25rem;
+			border-radius: 50%;
+			vertical-align: text-bottom;
+		}
+	}
+}
+
+
+// Each color
+@each $color-name, $color in $colors {
+	
+	.sw-radio-#{$color-name}{
+		// display: none;
+		position: absolute;
+		z-index: -1;
+		opacity: 0;
+	}
+	.sw-radio-#{$color-name}+label{
+		@extend %sw-radio;
+		i{
+			&:before{
+				border: 1px solid $color;
+			}
+		}
+	}
+	.sw-radio-#{$color-name}:checked+label{
+		transition: all 300ms ease;
+
+		i{
+			&:before{
+				transition: all 300ms ease;
+				background-color: $color;
+			}
+		}
+	}
+	.sw-radio-#{$color-name}:focus+label{
+
+		i{
+			&:before{
+				transition: all 300ms ease;
+				// box-shadow: 0 0 10px lighten($color, 20%);
+				border: 2px solid $color;
+			}
+		}
+	}
+}

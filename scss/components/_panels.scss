@@ -1,0 +1,23 @@
+// ----------------------------------------------------------------------
+// PANELS
+// ----------------------------------------------------------------------
+
+$default-color: map-get($colors, 'cloudy-font');
+
+.sw-panel{
+	box-sizing: border-box;
+	padding: 1rem;
+	border-top: 2px solid $default-color;
+	background-color: white;
+	margin-bottom: 2rem;
+	text-align: left;
+
+	// Each Color
+	// ------------------------------------------------------------------
+	@each $color-name, $color in $colors {
+
+		&.#{$color-name}{
+			border-top: 2px solid $color;
+		}
+	}
+}

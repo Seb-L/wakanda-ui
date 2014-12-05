@@ -1,0 +1,97 @@
+// Interface
+
+// WHOLE PAGE
+.sw-page{
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	overflow: hidden;
+}
+
+// MAIN NAV
+.sw-main-header{
+	width: 100%;
+	line-height: 1;	
+	height: 3.5rem;
+	background-color: map-get($colors, 'shadow-dark');
+	color: map-get($colors, 'shadow-font');
+	font-size: 1rem;
+	
+	a{
+		color: map-get($colors, 'shadow-font');
+
+		&:hover{
+			color: white;
+		}
+	}
+	ul{
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		height: 3.5rem;
+		
+		li{
+			padding: 0rem 1rem;
+			box-sizing: border-box;
+		}
+	}
+	.logo{
+		color: white;
+		width: 20rem;
+		text-align: center;
+
+		.wakanda{
+			color: #BABCBC;
+			font-weight: bold;
+		}
+	}
+	.sw-avatar{
+		width: 3.5rem;
+		height: 3.5rem;
+		float: right;
+	}
+}
+
+// SUB NAV
+.sw-sub-nav{
+	background-color: map-get($colors, 'cloudy-light');
+	color: black;
+	width: 100%;
+	font-size: 0.8rem;
+	white-space: nowrap;
+
+	ul{
+		display: flex;
+		flex-direction: row;
+		float: left;
+	}
+	li{
+		flex-grow: 1;
+		text-align: center;
+		padding: 0 0.8rem ;
+		line-height: 2.5rem;
+	}
+}
+
+// MAIN CONTAINER
+.sw-main-container{
+	display: flex;
+	flex-direction: row;
+	flex: 1;
+}
+
+.sw-left-sidebar{
+	display: flex;
+	flex-direction: row;
+	position: relative;
+	max-width: 20rem;
+	background-color: map-get($colors, 'shadow-medium');
+}
+
+.sw-sub-main-container{
+	flex: 1;
+	background-color: map-get($colors, 'cloudy-light');
+	border-top: 1px solid map-get($colors, 'cloudy-dark');
+	padding: 0.5rem 2rem 2rem 2rem;
+	overflow-y: auto;
+}

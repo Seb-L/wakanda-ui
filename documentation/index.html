@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>wakanda-ui</title>
+	
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/wakanda-ui.css">
+
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/styles/github.min.css">
+
+	<style>
+		html,
+		body,
+		.page{
+			height: 100%;
+		}
+		html{
+			font-size: 0.9rem;
+		}
+		body{
+			padding: 0;
+			text-align: center;
+		}
+		h1{
+			font-size: 4rem;
+		}
+		h2{
+			margin-bottom: 0;
+			font-size: 3.5rem;
+		}
+		h3{
+			margin-bottom: 2rem;
+		}
+		hr{
+			height: 0;
+			border-top: 4px solid #cccccc;
+			width: 5rem;
+			margin: 2rem auto;
+		}
+
+		/* Header */
+		.main-header{
+			box-sizing: border-box;
+			z-index: -1;
+			position: fixed;
+			top: 0;
+			right: 0;
+			width: calc(100% - 22rem);
+			height: 100%;
+			display: table;
+			vertical-align: middle;
+			background-color: #292b2b;
+			color: white;
+		}
+		.inner{
+			display: table-cell;
+			vertical-align: middle;
+			width: 100%;
+		}
+		.main-header p{
+			color: #646D73;
+			font-size: 1.5rem;
+			font-style: italic;
+		}
+		.title{
+			font-size: 4rem;
+			margin-bottom: 1.5rem;
+		}
+		
+		/* Sidebar */
+		#doc-nav{
+			border-right: 1px solid #646D73;
+			width: 22rem;
+			position: fixed;
+			top: 0;
+			left: 0;
+			text-align: left;
+			text-align: center;
+			text-align: left;
+			padding: 2rem 3rem;
+			box-sizing: border-box;
+			background-color: #292b2b;
+			color: #646D73;
+			height: 100%;
+			font-size: 1.2rem;
+			line-height: 3rem;
+			overflow-Y: auto; 
+		}
+		#doc-nav .logo{
+			width: 50%;
+			margin: 0 auto;
+		}
+		#doc-nav .logo img{
+			display: block;
+		}
+		#doc-nav h3{
+			text-align: center;
+			margin-top: 0;
+			color: white;
+		}
+		#doc-nav li{
+			line-height: 2rem;
+		}
+		#doc-nav li:before{
+
+		}
+
+		#doc-nav ::-webkit-scrollbar {
+			
+		}
+		#doc-nav ::-webkit-scrollbar-button {
+			
+		}
+
+		.fromH2{
+			font-size: 1.5rem;
+			text-align: left;
+			margin-top: 0.5rem;
+			margin-bottom: 0.5rem;
+			color: white;
+		}
+		.fromH2 a{
+			color: white;
+		}
+		.fromH3{
+			margin-left: 2rem;
+			list-style-type: square;
+		}
+
+		/* Page */
+		.page{
+			width: calc(100% - 22rem);
+			margin-left: 22rem;
+			box-sizing: border-box;
+			padding-top: 100vh;
+		}
+		.doc-section{
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+			border-bottom: 1px solid #cccccc;
+			padding: 5rem 8rem;
+			/*min-height: 100%;*/
+			width: 100%;
+			display: table;
+			background-color: white;
+		}
+		.details{
+			border-radius: 0.3rem;
+			display: inline-block;
+			padding: 1rem 2rem;
+			background-color: #292b2b;
+			color: white;
+		}
+		.colors-list{
+			font-size: 0;
+		}
+		.colors-list li{
+			display: inline-block;
+			width: 5rem;
+			height: 5rem;
+			margin-bottom: 0;
+			font-size: 1rem;
+			vertical-align: middle;
+			line-height: 5rem;
+		}
+		pre{
+			text-align: left;
+			display: inline-block;
+			/*padding: 2rem;*/
+			padding-right: 1rem;
+		}
+
+
+		/* Special */
+		.sw-container li{
+			background-color: #ecf0f1;
+			margin-bottom: 1rem;
+		}
+
+		#panels div{
+			width: 22%;
+			display: inline-block;
+			margin-right: 2%;
+			margin-bottom: 1rem;
+		}
+
+		.file-system{
+			text-align: left;
+			background-color: #E7E7E7;
+			padding: 1rem;
+			display: inline-block;
+		}
+		.file-system li{
+			border-bottom: 1px solid #C9C9C9;
+			padding: 0.5rem 2rem;
+		}
+		.file-system li:first-child{
+			line-height: 2rem;
+			background-color: #171D1F;
+		}
+		.file-system li img{
+			display: inline-block;
+			vertical-align: middle;
+		}
+		.file-system li:last-child{
+			border-bottom: none;
+		}
+		.file-system li img{
+			margin-right: 0.5rem;
+		}
+
+	</style>
+</head>
+<body>
+	
+<aside id="doc-nav">
+	<div class="logo">
+		<img src="http://wakanda.github.io/img/wakanda-logo.png" class="sw-resp-img" alt="">
+	</div>
+	<h3>wakanda ui</h3>
+	<ul></ul>
+</aside>
+<div class="page">
+	
+	<header class="main-header">
+		<div class="inner">
+			<img src="http://wakanda.github.io/img/wakanda-logo.png" alt=""><br><br>
+			<h1 class="title">wakanda-ui</h1>
+			<p>CSS references</p>
+		</div>
+	</header>
+	
+	<section id="colors" class="doc-section">
+	<h2>Colors</h2>
+	<hr>
+	<ul class="colors-list">
+		
+		<h3>Cloudy theme</h3>
+		<li class="sw-colors-bg-cloudy-light">light</li>
+		<li class="sw-colors-bg-cloudy-medium">medium</li>
+		<li class="sw-colors-bg-cloudy-dark">dark</li>
+		<br><br>
+	
+		<h3>Shadow theme</h3>
+		<li class="sw-colors-bg-shadow-light">light</li>
+		<li class="sw-colors-bg-shadow-medium">medium</li>
+		<li class="sw-colors-bg-shadow-dark">dark</li>
+		<br><br>
+		
+		<h3>Accents</h3>
+		<li class="sw-colors-bg-turquoise"></li>
+		<li class="sw-colors-bg-green-sea"></li>
+		<li class="sw-colors-bg-emerald"></li>
+		<li class="sw-colors-bg-nephritis"></li>
+		<li class="sw-colors-bg-peter-river"></li>
+		<li class="sw-colors-bg-belize-hole"></li>
+		<li class="sw-colors-bg-amethyst"></li>
+		<li class="sw-colors-bg-wisteria"></li>
+		<li class="sw-colors-bg-wet-asphalt"></li>
+		<li class="sw-colors-bg-midnight-blue"></li>
+		<li class="sw-colors-bg-sun-flower"></li>
+		<li class="sw-colors-bg-orange"></li>
+		<li class="sw-colors-bg-carrot"></li>
+		<li class="sw-colors-bg-pumpkin"></li>
+		<li class="sw-colors-bg-alizarin"></li>
+		<li class="sw-colors-bg-pomegranate"></li>
+		
+	</ul>
+</section>	<section id="interface" class="doc-section">
+	<h2>Interface</h2>
+	<hr>
+	<pre><code class="html">
+	<div class="sw-page">
+
+		<header class="sw-main-header">
+			<ul>
+				<li class="logo"><span class="wakanda">wakanda</span> <i class="ion-settings"></i> Designer</li>
+				<li><a href="">Menu Item</a></li>
+				<li><a href="">Menu Item</a></li>
+				<li><a href="">Menu Item</a></li>
+				<li><a href="">Menu Item</a></li>
+				<li><a href="">Menu Item</a></li>
+				<li><a href="">Menu Item</a></li>
+			</ul>
+		</header>
+
+		<nav class="sw-sub-nav">
+			<ul>
+				<li><a href="">Menu Item</a></li>
+				<li><a href="">Menu Item</a></li>
+				<li><a href="">Menu Item</a></li>
+				<li><a href="">Menu Item</a></li>
+				<li><a href="">Menu Item</a></li>
+				<li><a href="">Menu Item</a></li>
+			</ul>
+		</nav>
+
+		<div class="sw-main-container">
+
+			<aside class="sw-left-sidebar">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+			</aside>
+		
+			<section class="sw-sub-main-container">	
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+			</section>
+			
+		</div>
+
+	</div>
+	</code></pre>
+	
+	<hr>
+	
+	<div class="sw-page">
+
+		<header class="sw-main-header">
+			<ul>
+				<li class="logo"><span class="wakanda">wakanda</span> <i class="ion-settings"></i> Designer</li>
+				<li><a href="">Menu Item</a></li>
+				<li><a href="">Menu Item</a></li>
+				<li><a href="">Menu Item</a></li>
+				<li><a href="">Menu Item</a></li>
+				<li><a href="">Menu Item</a></li>
+				<li><a href="">Menu Item</a></li>
+			</ul>
+		</header>
+
+
+		<nav class="sw-sub-nav">
+			<ul>
+				<li><a href="">Menu Item</a></li>
+				<li><a href="">Menu Item</a></li>
+				<li><a href="">Menu Item</a></li>
+				<li><a href="">Menu Item</a></li>
+				<li><a href="">Menu Item</a></li>
+				<li><a href="">Menu Item</a></li>
+			</ul>
+		</nav>
+
+		<div class="sw-main-container">
+
+			<aside class="sw-left-sidebar">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque aliquam, ut at illum reiciendis voluptate libero molestias! Ipsum rerum aut, iure repellendus atque blanditiis fugit in nam voluptate esse recusandae.
+			</aside>
+		
+			<section class="sw-sub-main-container">	
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum odit quae consectetur optio adipisci recusandae sunt, porro natus vero vitae consequuntur dignissimos maxime nam modi placeat cum reprehenderit accusantium, nulla.
+			</section>
+			
+		</div>
+
+	</div>
+	
+</section>	<section id="panels" class="sw-colors-bg-cloudy-light doc-section">
+		
+	<h2>Panels</h2>
+	<br>
+	
+	
+	<pre><code class="html">
+	<div class="sw-panel"></div>
+
+	// Available in all colors (see colors section)
+	<div class="sw-panel peter-river"></div>
+	</code></pre>
+	<hr>
+	
+	<div class="sw-panel">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+	</div>
+	<div class="sw-panel peter-river">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+	</div>
+	<div class="sw-panel orange">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+	</div>
+	<div class="sw-panel emerald">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+	</div>
+
+</section>	<section id="tabs" class="doc-section">
+
+	<h2>Tabs</h2>
+	<hr>
+	<pre><code class="html">
+	<ul class="sw-tabs-nav">
+		<li class="sw-tabs-tab selected"><a href="#">blabla</a></li>
+		<li class="sw-tabs-tab"><a href="#">blabla</a></li>
+		<li class="sw-tabs-tab"><a href="#">blabla</a></li>
+		<li class="sw-tabs-tab"><a href="#">blabla</a></li>
+	</ul>
+	<div class="sw-tabs-container">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+	</div>
+	</code></pre>
+	<hr>
+	
+	
+	
+	<ul class="sw-tabs-nav">
+		<li class="sw-tabs-tab selected">
+			<a href="#">blabla</a>
+		</li>
+		<li class="sw-tabs-tab">
+			<a href="#">blabla</a>
+		</li>
+		<li class="sw-tabs-tab">
+			<a href="#">blabla</a>
+		</li>
+		<li class="sw-tabs-tab">
+			<a href="#">blabla</a>
+		</li>
+	</ul>
+	<div class="sw-tabs-container">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias ullam deserunt expedita quidem fugiat tempora, perspiciatis non possimus voluptatum iste voluptate amet debitis earum sint magni numquam repudiandae soluta reprehenderit.
+	</div>
+
+</section>	<section id="buttons" class="doc-section">
+
+	<h2>Buttons</h2>
+	<hr>
+	<pre><code class="html">
+	// 4 button types (ghost, plain, pill, 3d)
+	<button class="sw-btn-ghost">Button</button>
+	<button class="sw-btn-plain">Button</button>
+	<button class="sw-btn-pill">Button</button>
+	<button class="sw-btn-3d">Button</button>
+
+	// Available in all colors (see colors section)
+	<button class="sw-btn-ghost peter-river">Button</button>
+
+	// Large sizes
+	<button class="sw-btn-ghost sw-btn-lg">Button</button>
+	</code></pre>
+	<hr>
+	
+	<button class="sw-btn-ghost">Button</button>
+	<button class="sw-btn-plain">Button</button>
+	<button class="sw-btn-pill">Button</button>
+	<button class="sw-btn-3d">Button</button>
+	<br>
+	<button class="sw-btn-ghost peter-river">Button</button>
+	<button class="sw-btn-plain emerald">Button</button>
+	<button class="sw-btn-pill orange">Button</button>
+	<button class="sw-btn-3d shadow-medium">Button</button>
+	<br>
+	<button class="sw-btn-ghost sw-btn-lg">Button</button>
+	<button class="sw-btn-plain sw-btn-lg peter-river">Button</button>
+	<button class="sw-btn-pill sw-btn-lg">Button</button>
+	<button class="sw-btn-3d sw-btn-lg">Button</button>
+	
+</section>	<section id="form-elements" class="doc-section">
+	<h2>Form Elements</h2>
+	<hr>
+	<h3>Inputs</h3>
+	<hr>
+	<pre><code class="html">
+	// Text inputs
+	<input type="text" placeholder="I am a text input" />
+	<input type="password" placeholder="I am a password input" />
+	<input type="search" placeholder="I am a search input" />
+	<input type="date" placeholder="I am a search input" />
+	
+	// Form buttons
+	<input type="button" value="Form button" />
+	<input type="submit" />
+	<input type="reset" />
+	
+	// Range
+	<input type="range" min="0" value="20" max="100" />
+	</code></pre>
+	
+	<hr>
+
+
+	<input type="text" placeholder="I am a text input" /><br>
+	<input type="password" placeholder="I am a password input" /><br>
+	<input type="search" placeholder="I am a search input" /><br>
+	<input type="date" placeholder="I am a search input" /><br>
+
+	<br>
+
+	<input type="button" value="Form button" /><br><br>
+	<input type="submit" /><br><br>
+	<input type="reset" /><br><br>
+	
+	<br>
+
+	<input type="range" min="0" value="20" max="100" />
+	
+
+</section>	<section id="input-text" class="sw-colors-bg-shadow-medium doc-section">
+
+	<h3>Custom input text</h3>
+	<hr>
+	<pre><code class="html">
+	<input type="text" placeholder="I am a text input" class="sw-input-text-medium-COLOR" />
+	</code></pre>
+	
+	<hr>
+
+	<input type="text" placeholder="I am a text input" class="sw-input-text-medium-cloudy-light" />
+	<input type="text" placeholder="I am a text input" class="sw-input-text-medium-cloudy-medium" />
+	<input type="text" placeholder="I am a text input" class="sw-input-text-medium-cloudy-dark" />
+	<input type="text" placeholder="I am a text input" class="sw-input-text-medium-turquoise" />
+	<input type="text" placeholder="I am a text input" class="sw-input-text-medium-green-sea" />
+	<input type="text" placeholder="I am a text input" class="sw-input-text-medium-emerald" />
+	<input type="text" placeholder="I am a text input" class="sw-input-text-medium-nephritis" />
+	<input type="text" placeholder="I am a text input" class="sw-input-text-medium-peter-river" />
+	<input type="text" placeholder="I am a text input" class="sw-input-text-medium-belize-hole" />
+	<input type="text" placeholder="I am a text input" class="sw-input-text-medium-amethyst" />
+	<input type="text" placeholder="I am a text input" class="sw-input-text-medium-wisteria" />
+	<input type="text" placeholder="I am a text input" class="sw-input-text-medium-wet-asphalt" />
+	<input type="text" placeholder="I am a text input" class="sw-input-text-medium-midnight-blue" />	
+	<input type="text" placeholder="I am a text input" class="sw-input-text-medium-sun-flower" />
+	<input type="text" placeholder="I am a text input" class="sw-input-text-medium-orange" />
+	<input type="text" placeholder="I am a text input" class="sw-input-text-medium-carrot" />
+	<input type="text" placeholder="I am a text input" class="sw-input-text-medium-pumpkin" />
+	<input type="text" placeholder="I am a text input" class="sw-input-text-medium-alizarin" />
+	<input type="text" placeholder="I am a text input" class="sw-input-text-medium-pomegranate" />
+	
+
+</section>	<section id="checkboxes" class="doc-section">
+
+	<h3>Checkboxes</h3>
+	<hr>
+	<pre><code class="html">
+	// White tick
+	<input type="checkbox" id="myCheckbox" class="sw-checkbox-COLOR"/>
+	<label for="myCheckbox">
+		<i class="sw-icons-checkmark"></i> Checkbox
+	</label>
+	
+	// Black tick
+	<input type="checkbox" id="myCheckbox" class="sw-checkbox-COLOR-b"/>
+	<label for="myCheckbox">
+		<i class="sw-icons-checkmark"></i> Checkbox
+	</label>
+	</code></pre>
+	<hr>
+
+
+
+	<input type="checkbox" id="myCheckbox-cloudy-light" class="sw-checkbox"/>
+	<label for="myCheckbox-cloudy-light">
+		<i class="sw-icons-checkmark"></i> Checkbox
+	</label>
+
+	<input type="checkbox" id="myCheckbox-cloudy-medium" class="sw-checkbox peter-river"/>
+	<label for="myCheckbox-cloudy-medium">
+		<i class="sw-icons-checkmark"></i> Checkbox
+	</label>
+
+</section>	<section id="radio-buttons" class="doc-section">
+
+	<h3>Radio buttons</h3>
+	<hr>
+	<pre><code class="html">
+	<input name="myRadioBtn" type="radio" id="myradio" class="sw-radio-COLOR"/>
+	<label for="myradio">
+		<i></i> radio
+	</label>
+	</code></pre>
+	
+	<hr>
+
+	<input name="myRadioBtn" type="radio" id="myradio-cloudy-light" class="sw-radio-cloudy-light"/>
+	<label for="myradio-cloudy-light">
+		<i></i> radio
+	</label>
+
+	<input name="myRadioBtn" type="radio" id="myradio-cloudy-medium" class="sw-radio-cloudy-medium"/>
+	<label for="myradio-cloudy-medium">
+		<i></i> radio
+	</label>
+
+	<input name="myRadioBtn" type="radio" id="myradio-cloudy-dark" class="sw-radio-cloudy-dark"/>
+	<label for="myradio-cloudy-dark">
+		<i></i> radio
+	</label>
+
+
+	<input name="myRadioBtn" type="radio" id="myradio-shadow-light" class="sw-radio-shadow-light"/>
+	<label for="myradio-shadow-light">
+		<i></i> radio
+	</label>
+
+	<input name="myRadioBtn" type="radio" id="myradio-shadow-medium" class="sw-radio-shadow-medium"/>
+	<label for="myradio-shadow-medium">
+		<i></i> radio
+	</label>
+
+	<input name="myRadioBtn" type="radio" id="myradio-shadow-dark" class="sw-radio-shadow-dark"/>
+	<label for="myradio-shadow-dark">
+		<i></i> radio
+	</label>
+	
+	<input name="myRadioBtn" type="radio" id="myradio-turquoise" class="sw-radio-turquoise"/>
+	<label for="myradio-turquoise">
+		<i class="sw-icons-checkmark"></i> radio
+	</label>
+
+	<input name="myRadioBtn" type="radio" id="myradio-green-sea" class="sw-radio-green-sea"/>
+	<label for="myradio-green-sea">
+		<i class="sw-icons-checkmark"></i> radio
+	</label>
+
+
+	<input name="myRadioBtn" type="radio" id="myradio-emerald" class="sw-radio-emerald"/>
+	<label for="myradio-emerald">
+		<i class="sw-icons-checkmark"></i> radio
+	</label>
+
+	<input name="myRadioBtn" type="radio" id="myradio-nephritis" class="sw-radio-nephritis"/>
+	<label for="myradio-nephritis">
+		<i class="sw-icons-checkmark"></i> radio
+	</label>
+
+
+	<input name="myRadioBtn" type="radio" id="myradio-peter-river" class="sw-radio-peter-river"/>
+	<label for="myradio-peter-river">
+		<i class="sw-icons-checkmark"></i> radio
+	</label>
+
+	<input name="myRadioBtn" type="radio" id="myradio-belize-hole" class="sw-radio-belize-hole"/>
+	<label for="myradio-belize-hole">
+		<i class="sw-icons-checkmark"></i> radio
+	</label>
+
+
+	<input name="myRadioBtn" type="radio" id="myradio-amethyst" class="sw-radio-amethyst"/>
+	<label for="myradio-amethyst">
+		<i class="sw-icons-checkmark"></i> radio
+	</label>
+
+	<input name="myRadioBtn" type="radio" id="myradio-wisteria" class="sw-radio-wisteria"/>
+	<label for="myradio-wisteria">
+		<i class="sw-icons-checkmark"></i> radio
+	</label>
+
+
+	<input name="myRadioBtn" type="radio" id="myradio-wet-asphalt" class="sw-radio-wet-asphalt"/>
+	<label for="myradio-wet-asphalt">
+		<i class="sw-icons-checkmark"></i> radio
+	</label>
+
+	<input name="myRadioBtn" type="radio" id="myradio-midnight-blue" class="sw-radio-midnight-blue"/>
+	<label for="myradio-midnight-blue">
+		<i class="sw-icons-checkmark"></i> radio
+	</label>
+
+	<input name="myRadioBtn" type="radio" id="myradio-sun-flower" class="sw-radio-sun-flower"/>
+	<label for="myradio-sun-flower">
+		<i class="sw-icons-checkmark"></i> radio
+	</label>
+	<input name="myRadioBtn" type="radio" id="myradio-orange" class="sw-radio-orange"/>
+	<label for="myradio-orange">
+		<i class="sw-icons-checkmark"></i> radio
+	</label>
+
+	<input name="myRadioBtn" type="radio" id="myradio-carrot" class="sw-radio-carrot"/>
+	<label for="myradio-carrot">
+		<i class="sw-icons-checkmark"></i> radio
+	</label>
+
+	<input name="myRadioBtn" type="radio" id="myradio-pumpkin" class="sw-radio-pumpkin"/>
+	<label for="myradio-pumpkin">
+		<i class="sw-icons-checkmark"></i> radio
+	</label>
+
+	<input name="myRadioBtn" type="radio" id="myradio-alizarin" class="sw-radio-alizarin"/>
+	<label for="myradio-alizarin">
+		<i class="sw-icons-checkmark"></i> radio
+	</label>
+
+	<input name="myRadioBtn" type="radio" id="myradio-pomegranate" class="sw-radio-pomegranate"/>
+	<label for="myradio-pomegranate">
+		<i class="sw-icons-checkmark"></i> radio
+	</label>
+
+	<input name="myRadioBtn" type="radio" id="myradio-pouet" class="sw-radio-pomegranate"/>
+	<label for="myradio-pouet">
+		<i class="sw-icons-checkmark"></i> 
+	</label>
+
+</section>	<section id="icons" class="doc-section">
+	<h2>Icons</h2>
+	<hr>
+	<ul class="file-system">
+		
+		<li>
+			<img src="../images/icons/ui/icon-dashboard.svg" width="26" height="26" alt="">
+		</li>
+		<li>
+			<img src="../images/icons/files/icon-project-new.svg" width="17" height="16" alt="">
+			<img src="../images/icons/files/icon-project-duplicate.svg" width="17" height="16" alt="">
+			<img src="../images/icons/files/icon-file-new.svg" width="17" height="16" alt="">
+			<img src="../images/icons/files/icon-file-duplicate.svg" width="17" height="16" alt="">
+			<img src="../images/icons/files/icon-infos.svg" width="17" height="16" alt="">
+			<img src="../images/icons/files/icon-delete.svg" width="17" height="16" alt="">
+			<img src="../images/icons/files/icon-import.svg" width="17" height="16" alt="">
+		</li>
+
+
+		<li><img src="../images/icons/files/icon-folder.svg" width="12" height="12" alt=""> folder</li>
+		<li><img src="../images/icons/files/icon-image.svg" width="12" height="12" alt=""> image.jpg</li>
+		<li><img src="../images/icons/files/icon-js.svg" width="12" height="12" alt=""> javascript.js</li>
+		<li><img src="../images/icons/files/icon-css.svg" width="12" height="12" alt=""> styles.css</li>
+		<li><img src="../images/icons/files/icon-html.svg" width="12" height="12" alt=""> index.html</li>
+		<li><img src="../images/icons/files/icon-model.svg" width="12" height="12" alt=""> models</li>
+		<li><img src="../images/icons/files/icon-permissions.svg" width="12" height="12" alt=""> permissions</li>
+		<li><img src="../images/icons/files/icon-settings.svg" width="12" height="12" alt=""> settings</li>
+		
+	</ul>
+</section>	<section id="misc" class="doc-section">
+	<h2>Misc</h2>
+	<hr>
+	
+	<h3>Responsive Images</h3>
+	<p>(resize browser to see in action)</p>
+	<hr>
+	<pre><code class="html">
+	<img src="http://placekitten.com/g/1400/400" class="sw-resp-img" alt="">
+	</code></pre>
+	<hr>
+	<img src="http://placekitten.com/g/1400/400" class="sw-resp-img" alt="">
+</section>
+</div>
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/highlight.min.js"></script>
+<script>
+$(document).ready(function() {
+
+	$('a[href*=#]:not([href=#])').click(function() {
+		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+			var target = $(this.hash);
+			target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+			if (target.length) {
+				$('html,body').animate({
+					scrollTop: target.offset().top
+				}, 1000);
+				return false;
+			}
+		}
+	});
+	
+	// HTML to string for highlighting
+	$('code').each(function(i, block) {
+		$(this).text( this.innerHTML );
+	});
+	
+	// HIGHLIGHT.JS
+	$('pre code').each(function(i, block) {
+		hljs.highlightBlock(block);
+	});
+
+
+	// Navbar generator
+	$('h2, h3, h4, h5, h6', '.page').each(function(index){
+
+		var title = $(this).text();
+		var anchor = title.replace(/\s+/g, '-').toLowerCase();
+		var tagName = $(this).get(0).tagName;
+
+		$(this).attr('id', anchor);
+
+		$('#doc-nav ul').append('<li class="from'+ tagName +'"><a href="#'+ anchor +'">'+ title +'</a></li>');
+	  
+	});
+
+
+});
+</script>
+
+</body>
+</html>

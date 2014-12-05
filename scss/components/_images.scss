@@ -1,0 +1,12 @@
+// Buttons
+
+.sw-thumb{
+	border: 1px solid map-get($colors, 'shadow-light');
+	padding: 0.5rem;
+	display: inline-block;
+	background-color: map-get($colors, 'shadow-dark');
+
+	img{
+		display: block;
+	}
+}

@@ -1,0 +1,90 @@
+// Tree
+
+.sw-tree-item{
+	position: relative;
+	margin-left: 1.15rem;
+	line-height: 2rem;
+	
+	&:last-child{
+		border: none;
+	}
+	&:before{
+		content:'';
+		display: block;
+		border-top: 1px solid map-get($colors, 'shadow-light');
+		border-left: 1px solid map-get($colors, 'shadow-light');
+		height: 100%;
+		width: 1rem;
+		position: absolute;
+		bottom: -1.1rem;
+		left: -0.9rem;
+		z-index: 0;
+	}
+	&:last-child:before{
+		border-left: none;
+	}
+	&:first-child:after{
+		content:'';
+		display: block;
+		border-left: 1px solid map-get($colors, 'shadow-light');
+		height: 100%;
+		width: 1rem;
+		position: absolute;
+		bottom: 0.9rem;
+		left: -0.9rem;
+		z-index: 0;
+	}
+	a{
+		position: relative;
+		display: inline-block;
+		height: 100%;
+		width: 100%;
+		margin-left: 1.2rem;
+		
+		&:before{
+			z-index: 1;
+			content:'';
+			background-color: white;
+			width: 0.55rem;
+			height: 0.55rem;
+			display: inline-block;
+			margin-right: 0.5rem;
+			border-radius: 50%;
+			position: absolute;
+			left: -1.15rem;
+			top: 0.8rem;
+		}
+		i{
+			float: left;
+			margin-right: 0.5rem;
+			color: white;
+		}
+		span{
+			transition: all 300ms ease;
+			margin-left: 1.25rem;
+			display: block;
+			padding-left: 0.5rem;
+		}
+		
+	}
+	a.selected span{
+		transition: all 300ms ease;
+		background-color: map-get($colors, 'sun-flower');
+	}
+}
+
+.sw-tree-views{
+	transition: all 300ms ease;
+	display: none;
+	
+	.sw-tree-item a:before{
+		background-color: map-get($colors, 'shadow-light');
+	}
+	.sw-tree-item a.active:before{
+		background-color: map-get($colors, 'sun-flower');
+	}
+}
+.sw-tree-views.open{
+	transition: all 300ms ease;
+	display: block;
+}

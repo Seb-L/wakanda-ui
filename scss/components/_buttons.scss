@@ -1,0 +1,219 @@
+// ----------------------------------------------------------------------
+// BUTTONS (Ghost, Plain, Pill, 3d)
+// ----------------------------------------------------------------------
+
+$default-color: map-get($colors, 'cloudy-font');
+
+$padding-sm: 0.4rem 1rem;
+$border-sm: 1px;
+
+$padding-lg: 0.7rem 3rem;
+$border-lg: 2px;
+
+// ----------------------------------------------------------------------
+// > Ghost Button
+// ----------------------------------------------------------------------
+.sw-btn-ghost{
+	transition: all 200ms ease;
+	display: inline-block;
+	margin: 0.5rem;
+	font-weight: 400;
+	text-align: center;
+	vertical-align: middle;
+	cursor: pointer;
+	white-space: nowrap;
+	border: $border-sm solid $default-color;
+	color: $default-color;
+	padding: $padding-sm;
+	font-size: 1rem;
+	outline: none;
+	border-radius: .3rem;
+	background: none;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+	&:hover{
+		transition: all 200ms ease;
+		border-color: white;
+		color: white;
+	}
+	&:focus{
+		transition: all 300ms ease;
+		box-shadow: 0 0 10px darken( $default-color, 20%);
+	}
+	
+	// Each Color
+	// ------------------------------------------------------------------
+	@each $color-name, $color in $colors {
+
+		&.#{$color-name}{
+			border-color: $color;
+			color: $color;
+
+			&:hover{
+				border-color: lighten($color, 20%);
+				color: lighten($color, 20%);
+			}
+			&:focus{
+				transition: all 300ms ease;
+				box-shadow: 0 0 10px lighten($color, 20%);
+			}
+		}
+	}
+}
+
+// ----------------------------------------------------------------------
+// > Plain Button
+// ----------------------------------------------------------------------
+.sw-btn-plain{
+	@extend .sw-btn-ghost;
+	background-color: $default-color;
+	color: white;
+
+	&:hover{
+		border-color: lighten($default-color, 20%);
+		background-color: lighten($default-color, 20%);
+	}
+	&:focus{
+		transition: all 300ms ease;
+		box-shadow: 0 0 10px lighten($default-color, 20%);
+	}
+
+	// Each Color
+	// ------------------------------------------------------------------
+	@each $color-name, $color in $colors {
+
+		&.#{$color-name}{
+			border-color: $color;
+			background-color: $color;
+			color: white;
+
+			&:hover{
+				border-color: lighten($color, 20%);
+				background-color: lighten($color, 20%);
+				color: white;
+			}
+			&:focus{
+				transition: all 300ms ease;
+				box-shadow: 0 0 10px lighten($color, 20%);
+				color: white;
+			}
+		}
+	}
+}
+
+// ----------------------------------------------------------------------
+// > Pill Button
+// ----------------------------------------------------------------------
+.sw-btn-pill{
+	transition: all 200ms ease;
+	display: inline-block;
+	margin: 0.5rem;
+	font-weight: 400;
+	text-align: center;
+	vertical-align: middle;
+	cursor: pointer;
+	white-space: nowrap;
+	border: $border-sm solid $default-color;
+	color: $default-color;
+	padding: $padding-sm;
+	font-size: 1rem;
+	outline: none;
+	border-radius: 5rem;
+	background: none;
+	-webkit-font-smoothing: antialiased;
+ 	-moz-osx-font-smoothing: grayscale;
+	
+	&:hover{
+		transition: all 200ms ease;
+		color: white;
+		border-color: white;
+	}
+	&:focus{
+		transition: all 300ms ease;
+		box-shadow: 0 0 10px lighten($default-color, 20%);
+	}
+	
+	// Each Color
+	// ------------------------------------------------------------------
+	@each $color-name, $color in $colors {
+
+		&.#{$color-name}{
+			border-color: $color;
+			color: $color;
+
+			&:hover{
+				border-color: lighten($color, 20%);
+				color: lighten($color, 20%);
+			}
+			&:focus{
+				transition: all 300ms ease;
+				box-shadow: 0 0 10px lighten($color, 20%);
+			}
+		}
+	}
+}
+
+// ----------------------------------------------------------------------
+// > 3D Button
+// ----------------------------------------------------------------------
+.sw-btn-3d{
+	transition: all 200ms ease;
+	display: inline-block;
+	margin: 0.5rem;
+	font-weight: 400;
+	text-align: center;
+	vertical-align: middle;
+	cursor: pointer;
+	background-image: none;
+	border: 1px solid transparent;
+	white-space: nowrap;
+	background-color: $default-color;
+	padding: $padding-sm;
+	font-size: 1rem;
+	box-shadow: 0 3px 0 darken($default-color, 20%);
+	outline: none;
+	color: white;
+	-webkit-font-smoothing: antialiased;
+ 	-moz-osx-font-smoothing: grayscale;
+	
+	&:hover{
+		transition: all 200ms ease;
+		transform: translateY(3px);
+		-ms-transform: translateY(3px); // IE
+		plan-transform: translateY(3px); // Old IE
+		box-shadow: 0 0px 0 $default-color;
+	}
+	&:focus{
+		transition: all 300ms ease;
+		background-color: lighten($default-color, 20%);
+	}
+
+	// Each Color
+	// ------------------------------------------------------------------
+	@each $color-name, $color in $colors {
+
+		&.#{$color-name}{
+			background-color: $color;
+			box-shadow: 0 3px 0 darken($color, 20%);
+			color: white;
+
+			&:hover{
+				box-shadow: 0 0px 0 darken($color, 20%);
+			}
+			&:focus{
+				transition: all 300ms ease;
+				background-color: lighten($color, 20%);
+			}
+		}
+	}
+}
+
+// ----------------------------------------------------------------------
+// > Large Buttons
+// ----------------------------------------------------------------------
+.sw-btn-lg{
+	border-width: $border-lg;
+	padding: $padding-lg;
+	font-size: 1.2rem;
+}

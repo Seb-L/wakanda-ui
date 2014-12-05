@@ -1,0 +1,59 @@
+// Tabs
+
+.sw-tabs-nav{
+	background-color: map-get($colors, 'cloudy-medium');
+    display: table;
+    width: 100%;
+    border: 1px solid map-get($colors, 'cloudy-dark');
+    border-bottom: none;
+
+	.sw-tabs-tab{
+		display: inline-block;
+		display: table-cell;
+		text-align: center;
+		text-transform: uppercase;
+		border-bottom: 1px solid map-get($colors, 'cloudy-dark');
+		border-right: 1px solid map-get($colors, 'cloudy-dark');
+		vertical-align: middle;
+		box-shadow: 0 4px 0 map-get($colors, 'cloudy-dark') inset;
+		line-height: 1rem;
+		color: map-get($colors, 'shadow-font');
+		
+		&:last-child{
+			border-right: none;
+		}
+
+		a{	
+			padding: 0.7rem 0;
+			line-height: 1rem;
+			display: block;
+			width: 100%;
+			text-decoration: none;
+			color: map-get($colors, 'shadow-font');
+
+			&:hover{
+				color: black;
+			}
+		}
+		&.selected{
+			background-color: map-get($colors, 'cloudy-light');
+			background-color: white;
+			border-bottom: none;
+			box-shadow: none;
+			color: map-get($colors, 'cloudy-font');
+			cursor: default;
+
+			a{
+				color: map-get($colors, 'cloudy-font');
+			}
+		}
+	}
+
+}
+.sw-tabs-container{
+	background-color: map-get($colors, 'cloudy-light');
+	background-color: white;
+	border: 1px solid map-get($colors, 'cloudy-dark');
+    border-top: none;
+	padding: 1rem;
+}
