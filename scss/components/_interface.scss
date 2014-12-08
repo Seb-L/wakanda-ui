@@ -11,9 +11,7 @@
 .sw-main-header,
 .sw-sub-nav,
 .sw-left-sidebar{
-	color: map-get($colors, 'cloudy-font');
-	font-family: 'Lato', sans-serif;
-	line-height: 1.8rem;
+	@extend %sw-body-reset;
 }
 
 
@@ -49,6 +47,8 @@
 		color: white;
 		width: 20rem;
 		text-align: center;
+		user-select: none;
+		cursor: default;
 
 		.wakanda{
 			color: #BABCBC;

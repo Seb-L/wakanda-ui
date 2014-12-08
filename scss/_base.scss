@@ -1,29 +1,22 @@
 // Base
 html{
- // 	font-size: 85%;
+ 	font-size: 80%;
 	
-	// @include breakpoint($breakpoint-sm) {
- // 		font-size: 75%;
- // 	}
-	// @include breakpoint($breakpoint-md) {
- // 		font-size: 85%;
- // 	}
- // 	@include breakpoint($breakpoint-lg) {
- // 		font-size: 95%;
- // 	}
+	@include breakpoint($breakpoint-sm) {
+ 		font-size: 80%;
+ 	}
+	@include breakpoint($breakpoint-md) {
+ 		font-size: 90%;
+ 	}
+ 	@include breakpoint($breakpoint-lg) {
+ 		font-size: 95%;
+ 	}
 }
 html,
 body{
 	height: 100%;
 	-webkit-font-smoothing: antialiased;
  	-moz-osx-font-smoothing: grayscale;
-}
-
-body{
-	// background-color: $gray-medium;
-	// color: map-get($colors, 'cloudy-font');
-	// font-family: 'Lato', sans-serif;
-	// line-height: 1.8rem;
 }
 
 a{
@@ -57,3 +50,9 @@ h3{
 // *[class^="sw-"] {
 // 	background-color: red !important;
 // }
+
+%sw-body-reset{
+	color: map-get($colors, 'cloudy-font');
+	font-family: 'Lato', sans-serif;
+	line-height: 1.8rem;
+}
