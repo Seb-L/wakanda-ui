@@ -14,7 +14,6 @@
 	@extend %sw-body-reset;
 }
 
-
 // MAIN NAV
 .sw-main-header{
 	width: 100%;
@@ -41,6 +40,10 @@
 		li{
 			padding: 0rem 1rem;
 			box-sizing: border-box;
+
+			&:last-child {
+				margin-left: auto;
+			}
 		}
 	}
 	.logo{
@@ -95,6 +98,7 @@
 	flex-direction: row;
 	position: relative;
 	max-width: 20rem;
+	width: 20rem;
 	background-color: map-get($colors, 'shadow-medium');
 }
 
@@ -104,4 +108,34 @@
 	border-top: 1px solid map-get($colors, 'cloudy-dark');
 	padding: 0.5rem 2rem 2rem 2rem;
 	overflow-y: auto;
+	position: relative;
 }
+
+
+// MENU ACTIONS
+.sw-menu-actions{
+	border-top: 1px solid map-get($colors, 'cloudy-dark');
+	border-bottom: 1px solid map-get($colors, 'cloudy-dark');
+	display: flex;
+	flex-direction: row;
+
+	li{
+		padding: 0.8rem 0;
+		padding-right: 1rem;
+
+		&:last-child{
+			padding-right: 0;
+		}
+		a:hover{
+			color: black;
+		}
+		&.divider{
+			margin: 0.5rem 1rem;
+			margin-left: 0;
+			padding: 0;
+			width: 0;
+			border-right: 1px solid map-get($colors, 'cloudy-dark');
+		}
+	}
+}
+

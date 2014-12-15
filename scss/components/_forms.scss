@@ -85,13 +85,15 @@ input[type='range']::-moz-range-thumb {
 
 
 
-// CUSTOM INPUT
+// ----------------------------------------------------------------------
+// Input Text
+// ----------------------------------------------------------------------
 
-%sw-input-text-medium{
+.sw-input-text{
 	transition: all 300ms ease;
-	background-color: map-get($colors, 'shadow-dark') !important;
+	background-color: white;
 	outline: none;
-	border: 1px solid map-get($colors, 'cloudy-dark') !important;
+	border: 1px solid map-get($colors, 'cloudy-dark');
 	font-size: 1rem;
 	font-weight: 300;
 	color: white;
@@ -105,18 +107,31 @@ input[type='range']::-moz-range-thumb {
 	}
 	&:focus{
 		transition: all 300ms ease;
-		border: 1px solid map-get($colors, 'sun-flower') !important;
+		border: 1px solid map-get($colors, 'sun-flower');
+	}
+
+	// Each Color
+	// ------------------------------------------------------------------
+	@each $color-name, $color in $colors {
+		
+		&.#{$color-name}{
+			border-color: $color;
+		}
+	}
+
+	// Alt
+	// ------------------------------------------------------------------
+	&.sw-input-alt{
+		background-color: map-get($colors, 'shadow-dark');
+
+		&:focus{
+			transition: all 300ms ease;
+			border: 1px solid map-get($colors, 'sun-flower');
+		}
 	}
 }
 
-// Each color
-@each $color-name, $color in $colors {
-	
-	.sw-input-text-medium-#{$color-name}{
-		@extend %sw-input-text-medium;
-		border-color: $color !important;
-	}
-}
+
 
 // ----------------------------------------------------------------------
 // Checkboxes
@@ -183,6 +198,16 @@ input[type='range']::-moz-range-thumb {
 		}
 		&:focus.#{$color-name}+label i{
 			border-width: 2px;
+		}
+	}
+
+	// Alt
+	// ------------------------------------------------------------------
+	&.sw-input-alt{
+
+		&:checked+label i{
+			transition: all 300ms ease;
+			color: black;
 		}
 	}
 }

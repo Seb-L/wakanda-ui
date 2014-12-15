@@ -50,10 +50,10 @@ $colors :(
 // Each color -> text color & bg color
 @each $color-name, $color in $colors {
 
-	.sw-colors-#{$color-name}{
+	.sw-colors.#{$color-name}{
 		color: $color;
 	}
-	.sw-colors-bg-#{$color-name}{
+	.sw-colors-bg.#{$color-name}{
 		background-color: $color;
 	}
 }
