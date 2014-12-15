@@ -244,148 +244,148 @@ table {
   line-height: 1rem;
   border-radius: 50%; }
 
-.sw-colors-cloudy-light {
+.sw-cloudy-light {
   color: #EFEFEF; }
 
-.sw-colors-bg-cloudy-light {
+.sw-bg-cloudy-light {
   background-color: #EFEFEF; }
 
-.sw-colors-cloudy-medium {
+.sw-cloudy-medium {
   color: #E7E7E7; }
 
-.sw-colors-bg-cloudy-medium {
+.sw-bg-cloudy-medium {
   background-color: #E7E7E7; }
 
-.sw-colors-cloudy-dark {
+.sw-cloudy-dark {
   color: #C9C9C9; }
 
-.sw-colors-bg-cloudy-dark {
+.sw-bg-cloudy-dark {
   background-color: #C9C9C9; }
 
-.sw-colors-shadow-light {
+.sw-shadow-light {
   color: #434848; }
 
-.sw-colors-bg-shadow-light {
+.sw-bg-shadow-light {
   background-color: #434848; }
 
-.sw-colors-shadow-medium {
+.sw-shadow-medium {
   color: #292B2B; }
 
-.sw-colors-bg-shadow-medium {
+.sw-bg-shadow-medium {
   background-color: #292B2B; }
 
-.sw-colors-shadow-dark {
+.sw-shadow-dark {
   color: #171D1F; }
 
-.sw-colors-bg-shadow-dark {
+.sw-bg-shadow-dark {
   background-color: #171D1F; }
 
-.sw-colors-cloudy-font {
+.sw-cloudy-font {
   color: #646D73; }
 
-.sw-colors-bg-cloudy-font {
+.sw-bg-cloudy-font {
   background-color: #646D73; }
 
-.sw-colors-shadow-font {
+.sw-shadow-font {
   color: #9C9E9E; }
 
-.sw-colors-bg-shadow-font {
+.sw-bg-shadow-font {
   background-color: #9C9E9E; }
 
-.sw-colors-turquoise {
+.sw-turquoise {
   color: #1abc9c; }
 
-.sw-colors-bg-turquoise {
+.sw-bg-turquoise {
   background-color: #1abc9c; }
 
-.sw-colors-emerald {
+.sw-emerald {
   color: #2ecc71; }
 
-.sw-colors-bg-emerald {
+.sw-bg-emerald {
   background-color: #2ecc71; }
 
-.sw-colors-peter-river {
+.sw-peter-river {
   color: #3498db; }
 
-.sw-colors-bg-peter-river {
+.sw-bg-peter-river {
   background-color: #3498db; }
 
-.sw-colors-amethyst {
+.sw-amethyst {
   color: #9b59b6; }
 
-.sw-colors-bg-amethyst {
+.sw-bg-amethyst {
   background-color: #9b59b6; }
 
-.sw-colors-wet-asphalt {
+.sw-wet-asphalt {
   color: #34495e; }
 
-.sw-colors-bg-wet-asphalt {
+.sw-bg-wet-asphalt {
   background-color: #34495e; }
 
-.sw-colors-green-sea {
+.sw-green-sea {
   color: #16a085; }
 
-.sw-colors-bg-green-sea {
+.sw-bg-green-sea {
   background-color: #16a085; }
 
-.sw-colors-nephritis {
+.sw-nephritis {
   color: #27ae60; }
 
-.sw-colors-bg-nephritis {
+.sw-bg-nephritis {
   background-color: #27ae60; }
 
-.sw-colors-belize-hole {
+.sw-belize-hole {
   color: #2980b9; }
 
-.sw-colors-bg-belize-hole {
+.sw-bg-belize-hole {
   background-color: #2980b9; }
 
-.sw-colors-wisteria {
+.sw-wisteria {
   color: #8e44ad; }
 
-.sw-colors-bg-wisteria {
+.sw-bg-wisteria {
   background-color: #8e44ad; }
 
-.sw-colors-midnight-blue {
+.sw-midnight-blue {
   color: #2c3e50; }
 
-.sw-colors-bg-midnight-blue {
+.sw-bg-midnight-blue {
   background-color: #2c3e50; }
 
-.sw-colors-sun-flower {
+.sw-sun-flower {
   color: #ffcd43; }
 
-.sw-colors-bg-sun-flower {
+.sw-bg-sun-flower {
   background-color: #ffcd43; }
 
-.sw-colors-carrot {
+.sw-carrot {
   color: #e67e22; }
 
-.sw-colors-bg-carrot {
+.sw-bg-carrot {
   background-color: #e67e22; }
 
-.sw-colors-alizarin {
+.sw-alizarin {
   color: #e74c3c; }
 
-.sw-colors-bg-alizarin {
+.sw-bg-alizarin {
   background-color: #e74c3c; }
 
-.sw-colors-orange {
+.sw-orange {
   color: #f39c12; }
 
-.sw-colors-bg-orange {
+.sw-bg-orange {
   background-color: #f39c12; }
 
-.sw-colors-pumpkin {
+.sw-pumpkin {
   color: #d35400; }
 
-.sw-colors-bg-pumpkin {
+.sw-bg-pumpkin {
   background-color: #d35400; }
 
-.sw-colors-pomegranate {
+.sw-pomegranate {
   color: #c0392b; }
 
-.sw-colors-bg-pomegranate {
+.sw-bg-pomegranate {
   background-color: #c0392b; }
 
 .table {
@@ -433,7 +433,8 @@ body {
 
 a {
   text-decoration: none;
-  color: #646D73; }
+  color: #646D73;
+  cursor: pointer; }
   a:hover {
     color: white;
     text-decoration: none; }
@@ -449,10 +450,11 @@ h2 {
 
 h3 {
   font-size: 1.6rem;
-  margin: 1rem 0; }
+  margin: 1rem 0;
+  font-weight: 300; }
 
-#page {
-  height: 100%; }
+i {
+  font-style: normal; }
 
 .sw-main-header,
 .sw-sub-nav,
@@ -504,6 +506,8 @@ h3 {
       padding: 0rem 1rem;
       -moz-box-sizing: border-box;
            box-sizing: border-box; }
+      .sw-main-header ul li:last-child {
+        margin-left: auto; }
   .sw-main-header .logo {
     color: white;
     width: 20rem;
@@ -574,6 +578,7 @@ h3 {
           flex-direction: row;
   position: relative;
   max-width: 20rem;
+  width: 20rem;
   background-color: #292B2B; }
 
 .sw-sub-main-container {
@@ -584,7 +589,34 @@ h3 {
   background-color: #EFEFEF;
   border-top: 1px solid #C9C9C9;
   padding: 0.5rem 2rem 2rem 2rem;
-  overflow-y: auto; }
+  overflow-y: auto;
+  position: relative; }
+
+.sw-menu-actions {
+  border-top: 1px solid #C9C9C9;
+  border-bottom: 1px solid #C9C9C9;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+  .sw-menu-actions li {
+    padding: 0.8rem 0;
+    padding-right: 1rem; }
+    .sw-menu-actions li:last-child {
+      padding-right: 0; }
+    .sw-menu-actions li a:hover {
+      color: black; }
+    .sw-menu-actions li.divider {
+      margin: 0.5rem 1rem;
+      margin-left: 0;
+      padding: 0;
+      width: 0;
+      border-right: 1px solid #C9C9C9; }
 
 .sw-panel {
   -moz-box-sizing: border-box;
@@ -710,8 +742,8 @@ h3 {
   .sw-btn-ghost:hover, .sw-btn-plain:hover {
     -webkit-transition: all 200ms ease;
             transition: all 200ms ease;
-    border-color: white;
-    color: white; }
+    border-color: #98a0a5;
+    color: #98a0a5; }
   .sw-btn-ghost:focus, .sw-btn-plain:focus {
     -webkit-transition: all 300ms ease;
             transition: all 300ms ease;
@@ -962,7 +994,8 @@ h3 {
   color: white; }
   .sw-btn-plain:hover {
     border-color: #98a0a5;
-    background-color: #98a0a5; }
+    background-color: #98a0a5;
+    color: white; }
   .sw-btn-plain:focus {
     -webkit-transition: all 300ms ease;
             transition: all 300ms ease;
@@ -1302,8 +1335,8 @@ h3 {
   .sw-btn-pill:hover {
     -webkit-transition: all 200ms ease;
             transition: all 200ms ease;
-    color: white;
-    border-color: white; }
+    color: #98a0a5;
+    border-color: #98a0a5; }
   .sw-btn-pill:focus {
     -webkit-transition: all 300ms ease;
             transition: all 300ms ease;
@@ -1822,6 +1855,9 @@ h3 {
               transition: all 300ms ease;
       background-color: #df7c72; }
 
+.sw-btn-3d.sw-btn-alt {
+  color: black; }
+
 .sw-btn-lg {
   border-width: 2px;
   padding: 0.7rem 3rem;
@@ -1905,12 +1941,12 @@ input[type='range']::-moz-range-thumb {
   width: 2rem;
   background-color: #C9C9C9; }
 
-.sw-input-text-medium-cloudy-light, .sw-input-text-medium-cloudy-medium, .sw-input-text-medium-cloudy-dark, .sw-input-text-medium-shadow-light, .sw-input-text-medium-shadow-medium, .sw-input-text-medium-shadow-dark, .sw-input-text-medium-cloudy-font, .sw-input-text-medium-shadow-font, .sw-input-text-medium-turquoise, .sw-input-text-medium-emerald, .sw-input-text-medium-peter-river, .sw-input-text-medium-amethyst, .sw-input-text-medium-wet-asphalt, .sw-input-text-medium-green-sea, .sw-input-text-medium-nephritis, .sw-input-text-medium-belize-hole, .sw-input-text-medium-wisteria, .sw-input-text-medium-midnight-blue, .sw-input-text-medium-sun-flower, .sw-input-text-medium-carrot, .sw-input-text-medium-alizarin, .sw-input-text-medium-orange, .sw-input-text-medium-pumpkin, .sw-input-text-medium-pomegranate {
+.sw-input-text {
   -webkit-transition: all 300ms ease;
           transition: all 300ms ease;
-  background-color: #171D1F !important;
+  background-color: white;
   outline: none;
-  border: 1px solid #C9C9C9 !important;
+  border: 1px solid #C9C9C9;
   font-size: 1rem;
   font-weight: 300;
   color: white;
@@ -1918,90 +1954,72 @@ input[type='range']::-moz-range-thumb {
   width: 20rem;
   margin-bottom: 1rem;
   margin-right: 1rem; }
-  .sw-input-text-medium-cloudy-light::-webkit-input-placeholder, .sw-input-text-medium-cloudy-medium::-webkit-input-placeholder, .sw-input-text-medium-cloudy-dark::-webkit-input-placeholder, .sw-input-text-medium-shadow-light::-webkit-input-placeholder, .sw-input-text-medium-shadow-medium::-webkit-input-placeholder, .sw-input-text-medium-shadow-dark::-webkit-input-placeholder, .sw-input-text-medium-cloudy-font::-webkit-input-placeholder, .sw-input-text-medium-shadow-font::-webkit-input-placeholder, .sw-input-text-medium-turquoise::-webkit-input-placeholder, .sw-input-text-medium-emerald::-webkit-input-placeholder, .sw-input-text-medium-peter-river::-webkit-input-placeholder, .sw-input-text-medium-amethyst::-webkit-input-placeholder, .sw-input-text-medium-wet-asphalt::-webkit-input-placeholder, .sw-input-text-medium-green-sea::-webkit-input-placeholder, .sw-input-text-medium-nephritis::-webkit-input-placeholder, .sw-input-text-medium-belize-hole::-webkit-input-placeholder, .sw-input-text-medium-wisteria::-webkit-input-placeholder, .sw-input-text-medium-midnight-blue::-webkit-input-placeholder, .sw-input-text-medium-sun-flower::-webkit-input-placeholder, .sw-input-text-medium-carrot::-webkit-input-placeholder, .sw-input-text-medium-alizarin::-webkit-input-placeholder, .sw-input-text-medium-orange::-webkit-input-placeholder, .sw-input-text-medium-pumpkin::-webkit-input-placeholder, .sw-input-text-medium-pomegranate::-webkit-input-placeholder {
+  .sw-input-text::-webkit-input-placeholder {
     color: #C9C9C9; }
-  .sw-input-text-medium-cloudy-light::-moz-placeholder, .sw-input-text-medium-cloudy-medium::-moz-placeholder, .sw-input-text-medium-cloudy-dark::-moz-placeholder, .sw-input-text-medium-shadow-light::-moz-placeholder, .sw-input-text-medium-shadow-medium::-moz-placeholder, .sw-input-text-medium-shadow-dark::-moz-placeholder, .sw-input-text-medium-cloudy-font::-moz-placeholder, .sw-input-text-medium-shadow-font::-moz-placeholder, .sw-input-text-medium-turquoise::-moz-placeholder, .sw-input-text-medium-emerald::-moz-placeholder, .sw-input-text-medium-peter-river::-moz-placeholder, .sw-input-text-medium-amethyst::-moz-placeholder, .sw-input-text-medium-wet-asphalt::-moz-placeholder, .sw-input-text-medium-green-sea::-moz-placeholder, .sw-input-text-medium-nephritis::-moz-placeholder, .sw-input-text-medium-belize-hole::-moz-placeholder, .sw-input-text-medium-wisteria::-moz-placeholder, .sw-input-text-medium-midnight-blue::-moz-placeholder, .sw-input-text-medium-sun-flower::-moz-placeholder, .sw-input-text-medium-carrot::-moz-placeholder, .sw-input-text-medium-alizarin::-moz-placeholder, .sw-input-text-medium-orange::-moz-placeholder, .sw-input-text-medium-pumpkin::-moz-placeholder, .sw-input-text-medium-pomegranate::-moz-placeholder {
+  .sw-input-text::-moz-placeholder {
     color: #C9C9C9; }
-  .sw-input-text-medium-cloudy-light:-ms-input-placeholder, .sw-input-text-medium-cloudy-medium:-ms-input-placeholder, .sw-input-text-medium-cloudy-dark:-ms-input-placeholder, .sw-input-text-medium-shadow-light:-ms-input-placeholder, .sw-input-text-medium-shadow-medium:-ms-input-placeholder, .sw-input-text-medium-shadow-dark:-ms-input-placeholder, .sw-input-text-medium-cloudy-font:-ms-input-placeholder, .sw-input-text-medium-shadow-font:-ms-input-placeholder, .sw-input-text-medium-turquoise:-ms-input-placeholder, .sw-input-text-medium-emerald:-ms-input-placeholder, .sw-input-text-medium-peter-river:-ms-input-placeholder, .sw-input-text-medium-amethyst:-ms-input-placeholder, .sw-input-text-medium-wet-asphalt:-ms-input-placeholder, .sw-input-text-medium-green-sea:-ms-input-placeholder, .sw-input-text-medium-nephritis:-ms-input-placeholder, .sw-input-text-medium-belize-hole:-ms-input-placeholder, .sw-input-text-medium-wisteria:-ms-input-placeholder, .sw-input-text-medium-midnight-blue:-ms-input-placeholder, .sw-input-text-medium-sun-flower:-ms-input-placeholder, .sw-input-text-medium-carrot:-ms-input-placeholder, .sw-input-text-medium-alizarin:-ms-input-placeholder, .sw-input-text-medium-orange:-ms-input-placeholder, .sw-input-text-medium-pumpkin:-ms-input-placeholder, .sw-input-text-medium-pomegranate:-ms-input-placeholder {
+  .sw-input-text:-ms-input-placeholder {
     color: #C9C9C9; }
-  .sw-input-text-medium-cloudy-light::placeholder, .sw-input-text-medium-cloudy-medium::placeholder, .sw-input-text-medium-cloudy-dark::placeholder, .sw-input-text-medium-shadow-light::placeholder, .sw-input-text-medium-shadow-medium::placeholder, .sw-input-text-medium-shadow-dark::placeholder, .sw-input-text-medium-cloudy-font::placeholder, .sw-input-text-medium-shadow-font::placeholder, .sw-input-text-medium-turquoise::placeholder, .sw-input-text-medium-emerald::placeholder, .sw-input-text-medium-peter-river::placeholder, .sw-input-text-medium-amethyst::placeholder, .sw-input-text-medium-wet-asphalt::placeholder, .sw-input-text-medium-green-sea::placeholder, .sw-input-text-medium-nephritis::placeholder, .sw-input-text-medium-belize-hole::placeholder, .sw-input-text-medium-wisteria::placeholder, .sw-input-text-medium-midnight-blue::placeholder, .sw-input-text-medium-sun-flower::placeholder, .sw-input-text-medium-carrot::placeholder, .sw-input-text-medium-alizarin::placeholder, .sw-input-text-medium-orange::placeholder, .sw-input-text-medium-pumpkin::placeholder, .sw-input-text-medium-pomegranate::placeholder {
+  .sw-input-text::placeholder {
     color: #C9C9C9; }
-  .sw-input-text-medium-cloudy-light:focus, .sw-input-text-medium-cloudy-medium:focus, .sw-input-text-medium-cloudy-dark:focus, .sw-input-text-medium-shadow-light:focus, .sw-input-text-medium-shadow-medium:focus, .sw-input-text-medium-shadow-dark:focus, .sw-input-text-medium-cloudy-font:focus, .sw-input-text-medium-shadow-font:focus, .sw-input-text-medium-turquoise:focus, .sw-input-text-medium-emerald:focus, .sw-input-text-medium-peter-river:focus, .sw-input-text-medium-amethyst:focus, .sw-input-text-medium-wet-asphalt:focus, .sw-input-text-medium-green-sea:focus, .sw-input-text-medium-nephritis:focus, .sw-input-text-medium-belize-hole:focus, .sw-input-text-medium-wisteria:focus, .sw-input-text-medium-midnight-blue:focus, .sw-input-text-medium-sun-flower:focus, .sw-input-text-medium-carrot:focus, .sw-input-text-medium-alizarin:focus, .sw-input-text-medium-orange:focus, .sw-input-text-medium-pumpkin:focus, .sw-input-text-medium-pomegranate:focus {
+  .sw-input-text:focus {
     -webkit-transition: all 300ms ease;
             transition: all 300ms ease;
-    border: 1px solid #ffcd43 !important; }
-
-.sw-input-text-medium-cloudy-light {
-  border-color: #EFEFEF !important; }
-
-.sw-input-text-medium-cloudy-medium {
-  border-color: #E7E7E7 !important; }
-
-.sw-input-text-medium-cloudy-dark {
-  border-color: #C9C9C9 !important; }
-
-.sw-input-text-medium-shadow-light {
-  border-color: #434848 !important; }
-
-.sw-input-text-medium-shadow-medium {
-  border-color: #292B2B !important; }
-
-.sw-input-text-medium-shadow-dark {
-  border-color: #171D1F !important; }
-
-.sw-input-text-medium-cloudy-font {
-  border-color: #646D73 !important; }
-
-.sw-input-text-medium-shadow-font {
-  border-color: #9C9E9E !important; }
-
-.sw-input-text-medium-turquoise {
-  border-color: #1abc9c !important; }
-
-.sw-input-text-medium-emerald {
-  border-color: #2ecc71 !important; }
-
-.sw-input-text-medium-peter-river {
-  border-color: #3498db !important; }
-
-.sw-input-text-medium-amethyst {
-  border-color: #9b59b6 !important; }
-
-.sw-input-text-medium-wet-asphalt {
-  border-color: #34495e !important; }
-
-.sw-input-text-medium-green-sea {
-  border-color: #16a085 !important; }
-
-.sw-input-text-medium-nephritis {
-  border-color: #27ae60 !important; }
-
-.sw-input-text-medium-belize-hole {
-  border-color: #2980b9 !important; }
-
-.sw-input-text-medium-wisteria {
-  border-color: #8e44ad !important; }
-
-.sw-input-text-medium-midnight-blue {
-  border-color: #2c3e50 !important; }
-
-.sw-input-text-medium-sun-flower {
-  border-color: #ffcd43 !important; }
-
-.sw-input-text-medium-carrot {
-  border-color: #e67e22 !important; }
-
-.sw-input-text-medium-alizarin {
-  border-color: #e74c3c !important; }
-
-.sw-input-text-medium-orange {
-  border-color: #f39c12 !important; }
-
-.sw-input-text-medium-pumpkin {
-  border-color: #d35400 !important; }
-
-.sw-input-text-medium-pomegranate {
-  border-color: #c0392b !important; }
+    border: 1px solid #ffcd43; }
+  .sw-input-text.cloudy-light {
+    border-color: #EFEFEF; }
+  .sw-input-text.cloudy-medium {
+    border-color: #E7E7E7; }
+  .sw-input-text.cloudy-dark {
+    border-color: #C9C9C9; }
+  .sw-input-text.shadow-light {
+    border-color: #434848; }
+  .sw-input-text.shadow-medium {
+    border-color: #292B2B; }
+  .sw-input-text.shadow-dark {
+    border-color: #171D1F; }
+  .sw-input-text.cloudy-font {
+    border-color: #646D73; }
+  .sw-input-text.shadow-font {
+    border-color: #9C9E9E; }
+  .sw-input-text.turquoise {
+    border-color: #1abc9c; }
+  .sw-input-text.emerald {
+    border-color: #2ecc71; }
+  .sw-input-text.peter-river {
+    border-color: #3498db; }
+  .sw-input-text.amethyst {
+    border-color: #9b59b6; }
+  .sw-input-text.wet-asphalt {
+    border-color: #34495e; }
+  .sw-input-text.green-sea {
+    border-color: #16a085; }
+  .sw-input-text.nephritis {
+    border-color: #27ae60; }
+  .sw-input-text.belize-hole {
+    border-color: #2980b9; }
+  .sw-input-text.wisteria {
+    border-color: #8e44ad; }
+  .sw-input-text.midnight-blue {
+    border-color: #2c3e50; }
+  .sw-input-text.sun-flower {
+    border-color: #ffcd43; }
+  .sw-input-text.carrot {
+    border-color: #e67e22; }
+  .sw-input-text.alizarin {
+    border-color: #e74c3c; }
+  .sw-input-text.orange {
+    border-color: #f39c12; }
+  .sw-input-text.pumpkin {
+    border-color: #d35400; }
+  .sw-input-text.pomegranate {
+    border-color: #c0392b; }
+  .sw-input-text.sw-input-alt {
+    background-color: #171D1F; }
+    .sw-input-text.sw-input-alt:focus {
+      -webkit-transition: all 300ms ease;
+              transition: all 300ms ease;
+      border: 1px solid #ffcd43; }
 
 .sw-checkbox {
   position: absolute;
@@ -2331,6 +2349,10 @@ input[type='range']::-moz-range-thumb {
       background-color: #c0392b; }
   .sw-checkbox:focus.pomegranate + label i {
     border-width: 2px; }
+  .sw-checkbox.sw-input-alt:checked + label i {
+    -webkit-transition: all 300ms ease;
+            transition: all 300ms ease;
+    color: black; }
 
 .sw-radio {
   position: absolute;

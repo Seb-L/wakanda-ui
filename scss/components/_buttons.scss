@@ -34,8 +34,8 @@ $border-lg: 2px;
 
 	&:hover{
 		transition: all 200ms ease;
-		border-color: white;
-		color: white;
+		border-color: lighten($default-color, 20%);;
+		color: lighten($default-color, 20%);;
 	}
 	&:focus{
 		transition: all 300ms ease;
@@ -73,6 +73,7 @@ $border-lg: 2px;
 	&:hover{
 		border-color: lighten($default-color, 20%);
 		background-color: lighten($default-color, 20%);
+		color: white;
 	}
 	&:focus{
 		transition: all 300ms ease;
@@ -126,8 +127,8 @@ $border-lg: 2px;
 	
 	&:hover{
 		transition: all 200ms ease;
-		color: white;
-		border-color: white;
+		color: lighten($default-color, 20%);
+		border-color: lighten($default-color, 20%);;
 	}
 	&:focus{
 		transition: all 300ms ease;
@@ -207,6 +208,9 @@ $border-lg: 2px;
 			}
 		}
 	}
+}
+.sw-btn-3d.sw-btn-alt{
+	color: black;
 }
 
 // ----------------------------------------------------------------------

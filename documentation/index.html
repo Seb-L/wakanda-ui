@@ -161,12 +161,16 @@
 		}
 		.colors-list li{
 			display: inline-block;
-			width: 5rem;
+			width: 15rem;
 			height: 5rem;
-			margin-bottom: 0;
+			margin-bottom: 1rem;
 			font-size: 1rem;
 			vertical-align: middle;
-			line-height: 5rem;
+			/*line-height: 5rem;*/
+		}
+		.colors-list li div{
+			width: 100%;
+			height: 3rem;
 		}
 		pre{
 			text-align: left;
@@ -241,34 +245,34 @@
 	<ul class="colors-list">
 		
 		<h3>Cloudy theme</h3>
-		<li class="sw-colors-bg-cloudy-light">light</li>
-		<li class="sw-colors-bg-cloudy-medium">medium</li>
-		<li class="sw-colors-bg-cloudy-dark">dark</li>
+		<li><div class="sw-bg-cloudy-light"></div>light</li>
+		<li><div class="sw-bg-cloudy-medium"></div>medium</li>
+		<li><div class="sw-bg-cloudy-dark"></div>dark</li>
 		<br><br>
 	
 		<h3>Shadow theme</h3>
-		<li class="sw-colors-bg-shadow-light">light</li>
-		<li class="sw-colors-bg-shadow-medium">medium</li>
-		<li class="sw-colors-bg-shadow-dark">dark</li>
+		<li><div class="sw-bg-shadow-light sw-shadow-font"></div>light</li>
+		<li><div class="sw-bg-shadow-medium sw-shadow-font"></div>medium</li>
+		<li><div class="sw-bg-shadow-dark sw-shadow-font"></div>dark</li>
 		<br><br>
 		
 		<h3>Accents</h3>
-		<li class="sw-colors-bg-turquoise"></li>
-		<li class="sw-colors-bg-green-sea"></li>
-		<li class="sw-colors-bg-emerald"></li>
-		<li class="sw-colors-bg-nephritis"></li>
-		<li class="sw-colors-bg-peter-river"></li>
-		<li class="sw-colors-bg-belize-hole"></li>
-		<li class="sw-colors-bg-amethyst"></li>
-		<li class="sw-colors-bg-wisteria"></li>
-		<li class="sw-colors-bg-wet-asphalt"></li>
-		<li class="sw-colors-bg-midnight-blue"></li>
-		<li class="sw-colors-bg-sun-flower"></li>
-		<li class="sw-colors-bg-orange"></li>
-		<li class="sw-colors-bg-carrot"></li>
-		<li class="sw-colors-bg-pumpkin"></li>
-		<li class="sw-colors-bg-alizarin"></li>
-		<li class="sw-colors-bg-pomegranate"></li>
+		<li><div class="sw-bg-turquoise"></div>.sw-bg-turquoise</li>
+		<li><div class="sw-bg-green-sea"></div>.sw-bg-green-sea</li>
+		<li><div class="sw-bg-emerald"></div>.sw-bg-emerald</li>
+		<li><div class="sw-bg-nephritis"></div>.sw-bg-nephritis</li>
+		<li><div class="sw-bg-peter-river"></div>.sw-bg-peter-river</li>
+		<li><div class="sw-bg-belize-hole"></div>.sw-bg-belize-hole</li>
+		<li><div class="sw-bg-amethyst"></div>.sw-bg-amethyst</li>
+		<li><div class="sw-bg-wisteria"></div>.sw-bg-wisteria</li>
+		<li><div class="sw-bg-wet-asphalt"></div>.sw-bg-wet-asphalt</li>
+		<li><div class="sw-bg-midnight-blue"></div>.sw-bg-midnight-blue</li>
+		<li><div class="sw-bg-sun-flower"></div>.sw-bg-sun-flower</li>
+		<li><div class="sw-bg-orange"></div>.sw-bg-orange</li>
+		<li><div class="sw-bg-carrot"></div>.sw-bg-carrot</li>
+		<li><div class="sw-bg-pumpkin"></div>.sw-bg-pumpkin</li>
+		<li><div class="sw-bg-alizarin"></div>.sw-bg-alizarin</li>
+		<li><div class="sw-bg-pomegranate"></div>.sw-bg-pomegranate</li>
 		
 	</ul>
 </section>	<section id="interface" class="doc-section">
@@ -307,7 +311,17 @@
 			</aside>
 		
 			<section class="sw-sub-main-container">	
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+				<br>
+				<div class="sw-panel sun-flower">
+					<h3>Title</h3>
+					<ul class="sw-menu-actions">
+						<li>Actions menu</li>
+						<li class="divider"></li>
+						<li><a href="#"><i class="sw-icons-ios7-photos-outline" href="#"></i></a></li>
+					</ul>
+					<br>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+				</div>
 			</section>
 			
 		</div>
@@ -349,13 +363,35 @@
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque aliquam, ut at illum reiciendis voluptate libero molestias! Ipsum rerum aut, iure repellendus atque blanditiis fugit in nam voluptate esse recusandae.
 			</aside>
 		
-			<section class="sw-sub-main-container">	
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum odit quae consectetur optio adipisci recusandae sunt, porro natus vero vitae consequuntur dignissimos maxime nam modi placeat cum reprehenderit accusantium, nulla.
+			<section class="sw-sub-main-container">
+				<br>
+				<div class="sw-panel sun-flower">
+					<h3>Title</h3>
+					<ul class="sw-menu-actions">
+						<li>Actions menu</li>
+						<li class="divider"></li>
+						<li><a href="#"><i class="sw-icons-plus" href="#"></i></a></li>
+						<li><a href="#"><i class="sw-icons-ios7-photos-outline" href="#"></i></a></li>
+						<li><a href="#"><i class="sw-icons-trash-a" href="#"></i></a></li>
+						<li>Menu element</li>
+						<li><a href="#"><i class="sw-icons-plus" href="#"></i></a></li>
+						<li><a href="#"><i class="sw-icons-ios7-photos-outline" href="#"></i></a></li>
+						<li><a href="#"><i class="sw-icons-trash-a" href="#"></i></a></li>
+						<li><a href="#"><i class="sw-icons-plus" href="#"></i></a></li>
+						<li><a href="#"><i class="sw-icons-ios7-photos-outline" href="#"></i></a></li>
+						<li><a href="#"><i class="sw-icons-trash-a" href="#"></i></a></li>
+					</ul>
+					<br>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum odit quae consectetur optio adipisci recusandae sunt, porro natus vero vitae consequuntur dignissimos maxime nam modi placeat cum reprehenderit accusantium, nulla.
+				</div>
+				
+				
 			</section>
 			
 		</div>
 
 	</div>
+
 	
 </section>	<section id="panels" class="sw-colors-bg-cloudy-light doc-section">
 		
