@@ -434,10 +434,13 @@ body {
 a {
   text-decoration: none;
   color: #646D73;
-  cursor: pointer; }
+  cursor: pointer !important; }
   a:hover {
     color: white;
     text-decoration: none; }
+  a:active, a:visited, a:focus {
+    text-decoration: none;
+    color: #646D73; }
 
 hr {
   height: 0;
@@ -482,7 +485,8 @@ i {
   height: 3.5rem;
   background-color: #171D1F;
   color: #9C9E9E;
-  font-size: 1rem; }
+  font-size: 1rem;
+  z-index: 99; }
   .sw-main-header a {
     color: #9C9E9E; }
     .sw-main-header a:hover {
@@ -505,7 +509,8 @@ i {
     .sw-main-header ul li {
       padding: 0rem 1rem;
       -moz-box-sizing: border-box;
-           box-sizing: border-box; }
+           box-sizing: border-box;
+      vertical-align: middle; }
       .sw-main-header ul li:last-child {
         margin-left: auto;
         display: -webkit-box;
@@ -525,6 +530,11 @@ i {
         -webkit-justify-content: center;
             -ms-flex-pack: center;
                 justify-content: center; }
+      .sw-main-header ul li.active {
+        line-height: 3.5rem;
+        background-color: #EFEFEF; }
+        .sw-main-header ul li.active a {
+          color: #646D73; }
   .sw-main-header .logo {
     color: white;
     width: 20rem;
@@ -533,10 +543,31 @@ i {
        -moz-user-select: none;
         -ms-user-select: none;
             user-select: none;
-    cursor: default; }
+    cursor: default;
+    font-size: 1.2rem;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
     .sw-main-header .logo .wakanda {
       color: #BABCBC;
-      font-weight: bold; }
+      font-weight: bold;
+      font-size: 1.3rem; }
+    .sw-main-header .logo img {
+      margin: 0 0.5rem; }
   .sw-main-header .sw-avatar {
     width: 3.5rem;
     height: 3.5rem;
@@ -620,10 +651,50 @@ i {
   -webkit-box-direction: normal;
   -webkit-flex-direction: row;
       -ms-flex-direction: row;
-          flex-direction: row; }
+          flex-direction: row;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1rem;
+  font-size: 0.8rem;
+  color: #646D73; }
+  .sw-menu-actions a {
+    color: #646D73; }
+  .sw-menu-actions svg {
+    fill: #646D73; }
+  .sw-menu-actions ul {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .sw-menu-actions ul.push-right {
+      margin-left: auto; }
   .sw-menu-actions li {
     padding: 0.8rem 0;
-    padding-right: 1rem; }
+    padding-right: 1rem;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
     .sw-menu-actions li:last-child {
       padding-right: 0; }
     .sw-menu-actions li a:hover {
@@ -631,9 +702,19 @@ i {
     .sw-menu-actions li.divider {
       margin: 0.5rem 1rem;
       margin-left: 0;
-      padding: 0;
+      padding: 1rem 0;
       width: 0;
       border-right: 1px solid #C9C9C9; }
+    .sw-menu-actions li.right-spaced {
+      margin-right: 1.5rem; }
+  .sw-menu-actions.shadow-theme {
+    border-top: 1px solid #9C9E9E;
+    border-bottom: 1px solid #9C9E9E;
+    color: #9C9E9E; }
+    .sw-menu-actions.shadow-theme a {
+      color: #9C9E9E; }
+    .sw-menu-actions.shadow-theme svg {
+      fill: #9C9E9E !important; }
 
 .sw-panel {
   -moz-box-sizing: border-box;

@@ -22,11 +22,17 @@ body{
 a{
 	text-decoration: none;
 	color: map-get($colors, 'cloudy-font');
-	cursor: pointer;
+	cursor: pointer !important;
 
 	&:hover{
 		color: white;
 		text-decoration: none;
+	}
+	&:active,
+	&:visited,
+	&:focus{
+		text-decoration: none;
+		color: map-get($colors, 'cloudy-font');
 	}
 }
 hr{

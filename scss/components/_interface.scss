@@ -22,7 +22,7 @@
 	background-color: map-get($colors, 'shadow-dark');
 	color: map-get($colors, 'shadow-font');
 	font-size: 1rem;
-
+	z-index: 99;
 	
 	a{
 		color: map-get($colors, 'shadow-font');
@@ -40,6 +40,8 @@
 		li{
 			padding: 0rem 1rem;
 			box-sizing: border-box;
+			// height: 3.5rem;
+			vertical-align: middle;
 
 			&:last-child {
 				margin-left: auto;
@@ -47,6 +49,14 @@
 				flex-direction: row;
 				align-items: center;
 				justify-content: center;
+			}
+			&.active{
+				line-height: 3.5rem;
+				background-color: map-get($colors, 'cloudy-light');
+
+				a{
+					color: map-get($colors, 'cloudy-font');
+				}
 			}
 		}
 	}
@@ -56,10 +66,20 @@
 		text-align: center;
 		user-select: none;
 		cursor: default;
+		font-size: 1.2rem;
+
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
 
 		.wakanda{
 			color: #BABCBC;
 			font-weight: bold;
+			font-size: 1.3rem;
+		}
+		img{
+			margin: 0 0.5rem;
 		}
 	}
 	.sw-avatar{
@@ -122,10 +142,32 @@
 	border-bottom: 1px solid map-get($colors, 'cloudy-dark');
 	display: flex;
 	flex-direction: row;
+	align-items: center;
+	margin-bottom: 1rem;
+	font-size: 0.8rem;
+	color: map-get($colors, 'cloudy-font');
+	
+	a{
+		color: map-get($colors, 'cloudy-font');
+	}
+	svg{
+		fill: map-get($colors, 'cloudy-font');
+	}
+	ul{
+		display: flex;
+		flex-direction: row;
+		align-items: center;	
 
+		&.push-right{
+			margin-left: auto;
+		}
+	}
 	li{
 		padding: 0.8rem 0;
 		padding-right: 1rem;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
 
 		&:last-child{
 			padding-right: 0;
@@ -136,9 +178,24 @@
 		&.divider{
 			margin: 0.5rem 1rem;
 			margin-left: 0;
-			padding: 0;
+			padding: 1rem 0;
 			width: 0;
 			border-right: 1px solid map-get($colors, 'cloudy-dark');
+		}
+		&.right-spaced{
+			margin-right: 1.5rem;
+		}
+	}
+	&.shadow-theme{
+		border-top: 1px solid map-get($colors, 'shadow-font');
+		border-bottom: 1px solid map-get($colors, 'shadow-font');
+		color: map-get($colors, 'shadow-font');
+	
+		a{
+			color: map-get($colors, 'shadow-font');
+		}
+		svg{
+			fill: map-get($colors, 'shadow-font') !important;
 		}
 	}
 }
